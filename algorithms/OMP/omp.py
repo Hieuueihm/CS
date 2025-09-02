@@ -29,7 +29,6 @@ def cs_omp(y, T_Mat, s = None, max_iter=1000, tol=1e-6):
     hat_x = np.zeros(m)               
     Aug_t = np.zeros((n, 0))         
     r_n = y.copy()
-    r_n_old = 0                    
     pos_array = []
     aug_x = 0
     T_Mat = T_Mat / np.linalg.norm(T_Mat, axis=0, keepdims=True)
@@ -49,8 +48,8 @@ def cs_omp(y, T_Mat, s = None, max_iter=1000, tol=1e-6):
         Aug_t = np.hstack((Aug_t, T_Mat[:, [pos]]))
         T_Mat[:, pos] = 0
         aug_x = np.linalg.pinv(Aug_t) @ y
-        r_n_old = r_n
         r_n = y - Aug_t @ aug_x
+        # print(np.linalg.norm(r_n))
         if s is None and np.linalg.norm(r_n) < tol:
             break
     hat_x[pos_array] = aug_x    

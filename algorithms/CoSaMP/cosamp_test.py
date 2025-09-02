@@ -40,8 +40,8 @@ def demo_cs_omp(image_path="lena.bmp"):
         # omp.fit(Theta_1d, y)
         # coef = omp.coef_
         # sparse_rec_1d[:, i] = coef
-        column_rec = cs_cosamp(img_cs_1d[:, i], Theta_1d)
-        sparse_rec_1d[:, i] = column_rec
+        column_rec, it = cs_cosamp(img_cs_1d[:, i], Theta_1d, height // 10)
+        sparse_rec_1d[:, i] = column_rec.T
 
 
 	# Reconstruct ảnh
@@ -63,4 +63,4 @@ def demo_cs_omp(image_path="lena.bmp"):
 #------------------------------
 # Run Demo
 #------------------------------
-demo_cs_omp("../lena.bmp")  # nhớ để ảnh Lena trong cùng thư mục
+demo_cs_omp("../lena.bmp") 

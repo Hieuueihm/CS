@@ -6,7 +6,6 @@ from scipy.fftpack import dct, idct
 from sklearn.linear_model import OrthogonalMatchingPursuit
 import time
 from omp import cs_omp
-
 def demo_cs_omp(image_path="lena.bmp"):
     # Đọc ảnh grayscale
     img = io.imread(image_path, as_gray=True)
@@ -41,7 +40,7 @@ def demo_cs_omp(image_path="lena.bmp"):
         # coef = omp.coef_
         # sparse_rec_1d[:, i] = coef
         column_rec = cs_omp(img_cs_1d[:, i], Theta_1d)
-        sparse_rec_1d[:, i] = column_rec
+        sparse_rec_1d[:, i] = column_rec.T
 
 
 	# Reconstruct ảnh
@@ -63,4 +62,4 @@ def demo_cs_omp(image_path="lena.bmp"):
 #------------------------------
 # Run Demo
 #------------------------------
-demo_cs_omp("../lena.bmp")  # nhớ để ảnh Lena trong cùng thư mục
+demo_cs_omp("../lena.bmp")  
