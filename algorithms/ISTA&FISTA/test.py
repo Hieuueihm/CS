@@ -31,14 +31,22 @@ y = A @ x
 x_rec1, error1 = cs_fista(y, A, lambda_=5e-3, epsilon=1e-4, itermax=5000)
 x_rec2, error2 = cs_ista(y, A, lambda_=5e-3, epsilon=1e-4, itermax=5000)
 
-# Plot error norm
+plt.figure()
+plt.plot(error1[:,0], 'r-', label='fista')
+plt.plot(error2[:,0], 'b-', label='ista')
+plt.legend()
+plt.xlabel("Iteration")
+plt.ylabel("Relative change norm")
+plt.title("Convergence (err1) - solution update")
+plt.grid(True)
+
 plt.figure()
 plt.plot(error1[:,1], 'r-', label='fista')
 plt.plot(error2[:,1], 'b-', label='ista')
 plt.legend()
 plt.xlabel("Iteration")
 plt.ylabel("Residual norm")
-plt.title("Convergence of ISTA vs FISTA")
+plt.title("Convergence (err2) - residual")
 plt.grid(True)
 
 # Plot signal recovery

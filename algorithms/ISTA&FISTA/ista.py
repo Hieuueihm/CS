@@ -6,8 +6,12 @@ def cs_ista(y, A, lambda_=2e-5, epsilon=1e-4, itermax = 1000):
 
 	for i in range(itermax):
 		g_1 = A.T@(y - A@x_1)
-		alpha = 1
+		
+		# alpha = 1
 
+		Ag = A @ g_1
+		alpha = (g_1.T @ g_1) / (Ag.T @ Ag + 1e-12)
+		alpha = float(alpha)
 		x_2 = x_1 + alpha*g_1
 		x_hat = np.sign(x_2) * np.maximum(np.abs(x_2) - alpha*lambda_, 0)
 		err1 = np.linalg.norm(x_hat - x_1) / (np.linalg.norm(x_hat) + 1e-12)
