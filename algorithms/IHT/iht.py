@@ -10,7 +10,7 @@ def cs_iht(y, T_Mat, k= None, itermax=1000, patience=20):
         T_Mat   : ndarray, sensing matrix (n,m)
         k       : int, sparsity (if None, use len(y)//4)
         itermax : int, maximum iterations
-        tol     : float, convergence tolerance
+        patience: int, convergence 
 
     Returns:
         hat_x   : ndarray, recovered signal (m,)
