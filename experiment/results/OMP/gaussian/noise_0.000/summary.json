@@ -1,0 +1,12 @@
+{
+  "algo": "OMP",
+  "elapsed_sec": 4.87706659999094,
+  "iters": 256,
+  "metrics": {
+    "PSNR": 20.03788449486381
+  },
+  "solver_params": {
+    "K": 256,
+    "tol": 1e-06
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "algo": "IHT",
+  "elapsed_sec": 3.099813999986509,
+  "iters": 537,
+  "metrics": {
+    "PSNR": 18.365654731527744
+  },
+  "solver_params": {
+    "K": 256,
+    "max_iter": 600,
+    "tol": 1e-06
+  }
+}

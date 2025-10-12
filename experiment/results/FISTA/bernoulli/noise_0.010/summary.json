@@ -1,0 +1,13 @@
+{
+  "algo": "FISTA",
+  "elapsed_sec": 2.5058434000238776,
+  "iters": 600,
+  "metrics": {
+    "PSNR": 21.742155569143847
+  },
+  "solver_params": {
+    "lam": 0.03218280496385158,
+    "max_iter": 600,
+    "tol": 1e-06
+  }
+}

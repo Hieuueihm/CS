@@ -1,0 +1,13 @@
+{
+  "algo": "ISTA",
+  "elapsed_sec": 2.5448776000121143,
+  "iters": 600,
+  "metrics": {
+    "PSNR": 18.231397088034992
+  },
+  "solver_params": {
+    "lam": 0.03218280496385158,
+    "max_iter": 600,
+    "tol": 1e-06
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "algo": "SP",
+  "elapsed_sec": 1.3164323000237346,
+  "iters": 10,
+  "metrics": {
+    "PSNR": 19.26739091515772
+  },
+  "solver_params": {
+    "K": 256,
+    "max_iter": 600,
+    "tol": 1e-06,
+    "rels": true
+  }
+}
