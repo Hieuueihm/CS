@@ -73,32 +73,32 @@ def make_gaussian_sensing(m: int, n: int, seed: Optional[int] = None) -> np.ndar
 
 def main():
     N = 256
-    accel = 6.0
-    center_fraction = 0.10
-    iters = 120
+    center_fraction = 0.08
+    accel = 4.2
+    k_fraction = 0.30
+    iters = 200
     step = 1.0
-    k_fraction = 0.08
-    eps_abs = 1e-4
-    min_iters = 5
+    eps_abs = 1e-5
+    min_iters = 20
 
     # ---- data ----
     phantom = shepp_logan_phantom()
     phantom = resize(phantom, (N, N), anti_aliasing=True)
     gt = phantom
-    # mask = make_var_dens_mask(
-    #     N, N, accel=accel, center_fraction=center_fraction, seed=123
-    # )
-    mask = make_gaussian_sensing(N, N)
-    # kspace_full = fft2c(gt)
+    mask = make_var_dens_mask(
+        N, N, accel=accel, center_fraction=center_fraction, seed=123
+    )
+    # mask = make_gaussian_sensing(N, N)
+    kspace_full = fft2c(gt)
     # y = mask * kspace_full
-    kspace_full = dct2(gt)
+    # kspace_full = dct2(gt)
     y = mask * kspace_full
 
-    A = lambda x: mask * dct2(x)
-    AT = lambda yy: idct2(mask * yy)
+    # A = lambda x: mask * dct2(x)
+    # AT = lambda yy: idct2(mask * yy)
 
-    # A = lambda x: mask * fft2c(x)
-    # AT = lambda yy: ifft2c(mask * yy)
+    A = lambda x: mask * fft2c(x)
+    AT = lambda yy: ifft2c(mask * yy)
 
     zf = np.clip(np.real(AT(y)), 0, 1)
     zf_psnr = psnr(zf, gt)

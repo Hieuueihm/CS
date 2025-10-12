@@ -83,61 +83,73 @@ def collect_cases_from_json():
     return cases, data
 
 
-def plot_bar(metric_name, data_pairs, title, save_path):
+def plot_bar(metric_name, data_pairs, title, save_path, figsize=(9, 5), dpi=200):
     order_map = {a: i for i, a in enumerate(ALG_ORDER)}
     data_pairs.sort(key=lambda p: order_map.get(p[0], 999))
     algs = [a for a, _ in data_pairs]
     vals = [v for _, v in data_pairs]
-    plt.figure()
+
+    fig, ax = plt.subplots(figsize=figsize)
     x = np.arange(len(algs))
-    plt.bar(x, vals)
-    plt.xticks(x, algs, rotation=0)
-    plt.ylabel(metric_name)
-    plt.title(title)
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=150)
-    plt.close()
+    ax.bar(x, vals)
+    ax.set_xticks(x, algs)
+    ax.set_ylabel(metric_name)
+    ax.set_title(title)
+    ax.margins(x=0.05)
+
+    fig.tight_layout()
+    fig.savefig(save_path, dpi=dpi)
+    plt.close(fig)
 
 
-def plot_grouped_bars_all_cases(metric_name, data, title, save_path):
-
+def plot_grouped_bars_all_cases(
+    metric_name, data, title, save_path, figsize=(11, 6), dpi=220
+):
     algs = ALG_ORDER[:]
     x = np.arange(len(algs))
-    width = 0.18
-    plt.figure()
+    num_cases = len(CASE_ORDER)
 
-    offsets = np.linspace(-1.5 * width, 1.5 * width, num=len(CASE_ORDER))
+    width = min(0.8 / max(num_cases, 1), 0.18)
+    gap = 0.02
+    offsets = (np.arange(num_cases) - (num_cases - 1) / 2.0) * (width + gap)
+
+    fig, ax = plt.subplots(figsize=figsize)
     plotted_any = False
 
-    for off, case in zip(offsets, CASE_ORDER):
+    for i, case in enumerate(CASE_ORDER):
         measure, noise_rel = case
         label = CASE_LABEL.get(case, f"{measure}, noise={noise_rel:.3f}")
         color = CASE_COLOR.get(case, None)
+
         vals = []
+        per_case = data.get((measure, noise_rel), {})
         for a in algs:
             v = np.nan
-            per_algo = data.get((measure, noise_rel), {})
-            if a in per_algo:
-                val = per_algo[a].get(metric_name, np.nan)
+            if a in per_case:
+                val = per_case[a].get(metric_name, np.nan)
                 v = val if (val is not None) else np.nan
             vals.append(v)
         vals = np.array(vals, dtype=float)
         if np.all(np.isnan(vals)):
             continue
-        plt.bar(x + off, vals, width=width, label=label, color=color)
+
+        ax.bar(x + offsets[i], vals, width=width, label=label, color=color)
         plotted_any = True
 
     if not plotted_any:
-        plt.close()
+        plt.close(fig)
         return False
 
-    plt.xticks(x, algs, rotation=0)
-    plt.ylabel(metric_name)
-    plt.title(title)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=150)
-    plt.close()
+    ax.set_xticks(x, algs)
+    ax.set_ylabel(metric_name)
+    ax.set_title(title)
+    ax.margins(x=0.05)
+
+    leg = ax.legend(loc="center left", bbox_to_anchor=(1.02, 0.5), frameon=False)
+    fig.tight_layout(rect=[0, 0, 0.82, 1])
+
+    fig.savefig(save_path, dpi=dpi)
+    plt.close(fig)
     return True
 
 
