@@ -34,7 +34,6 @@ def ssim(x, y, data_range=None):
     if x.shape != y.shape:
         raise ValueError(f"SSIM: shape mismatch {x.shape} vs {y.shape}")
 
-    # nếu là 1D, ép về (N,1) cho hợp lệ
     if x.ndim == 1:
         x = x.reshape(-1, 1)
         y = y.reshape(-1, 1)
