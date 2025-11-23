@@ -6,6 +6,7 @@ import numpy as np
 class TransformKind(Enum):
     DCT = "dct"
     FFT = "fft"
+    NONE = "no_transform"
 
 
 class Transform:
@@ -22,7 +23,6 @@ class Transform:
 
         elif self.kind == TransformKind.FFT:
             return self._forward_fft(img)
-
         else:
             raise ValueError(f"Unsupported transform kind: {self.kind}")
 

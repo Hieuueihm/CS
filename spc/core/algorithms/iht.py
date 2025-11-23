@@ -7,7 +7,7 @@ def cs_iht(
     A,
     k=None,
     max_iter=1000,
-    patience=10,
+    tol=1e-6,
     step=0.5,
     return_info=True,
     ignore_iteration_log=False,
@@ -57,13 +57,11 @@ def cs_iht(
             info.iteration_log = False
         info.set_meta("k", k)
         info.set_meta("max_iter", max_iter)
-        info.set_meta("patience", patience)
         info.set_meta("step", step)
 
     hat_x_prev = np.zeros(n)
-    last_support = set()
-    stable_count = 0
 
+    prev_resn = None
     t0 = time.time()
     stop_reason = "max_iter_reached"
 
@@ -80,30 +78,23 @@ def cs_iht(
         else:
             hat_x = x_tmp
 
-        support = set(np.nonzero(hat_x)[0])
-
         residual = y - A @ hat_x
         resn = float(np.linalg.norm(residual))
 
         if info is not None and info.iteration_log:
             sparsity = int(np.count_nonzero(hat_x))
-
             info.add_iteration(
                 residual_norm=resn,
                 sparsity=sparsity,
                 step_size=step,
-                support=sorted(support),
             )
 
-        if support == last_support:
-            stable_count += 1
-        else:
-            stable_count = 0
-        last_support = support
-
-        if stable_count >= patience:
-            stop_reason = "support_stable"
-            break
+        if prev_resn is not None:
+            rel_change = abs(prev_resn - resn) / max(prev_resn, 1e-12)
+            if rel_change <= tol:
+                stop_reason = "residual_converged"
+                break
+        prev_resn = resn
 
         hat_x_prev = hat_x
 

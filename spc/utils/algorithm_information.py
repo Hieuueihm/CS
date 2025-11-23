@@ -7,9 +7,6 @@ class AlgorithmInformation:
     SP_STOP_INFORMATION = "sp_stop_information"
 
     def __init__(self, algorithm_name, iteration_log=True):
-        """
-        algorithm_name: ex 'omp', 'iht', 'fista'
-        """
         self.algorithm_name = algorithm_name
 
         self.stop_reason = None
@@ -27,10 +24,10 @@ class AlgorithmInformation:
 
     def add_iteration(
         self,
-        residual_norm,
-        sparsity,
-        step_size,
-        support,
+        residual_norm=None,
+        sparsity=None,
+        step_size=None,
+        support=None,
     ):
         if residual_norm is not None:
             self.history["residual_norm"].append(float(residual_norm))
@@ -57,12 +54,23 @@ class AlgorithmInformation:
     def set_time(self, time):
         self.time = time
 
+    def get_history(self):
+        return self.history
+
     def get(self):
         return {
             "algorithm_name": self.algorithm_name,
             "stop_reason": self.stop_reason,
             "num_iterations": self.num_iterations,
-            "history": self.history,
+            "meta": self.meta,
+            "time": self.time,
+        }
+
+    def __repr__(self):
+        return {
+            "algorithm_name": self.algorithm_name,
+            "stop_reason": self.stop_reason,
+            "num_iterations": self.num_iterations,
             "meta": self.meta,
             "time": self.time,
         }

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "t01",
+        "image_size": [
+            64,
+            64
+        ],
+        "sparsity_level": 0.25,
+        "transform_type": "NONE",
+        "noise_db": 10,
+        "loop_count": 20
+    }
+]

@@ -42,7 +42,6 @@ def cs_omp(
     hat_x = np.zeros(n)
     residual = y.copy()  # r_0 = y
     support = []
-
     if k is not None:
         n_iter = min(k, max_iter)
     else:
@@ -91,5 +90,6 @@ def cs_omp(
                 AlgorithmInformation.OMP_STOP_INFORMATION + ":" + stop_reason
             )
             info.set_time(t1 - t0)
+        print("OMP finished:", stop_reason)
         return hat_x, info
-    return hat_x
+    return hat_x, _

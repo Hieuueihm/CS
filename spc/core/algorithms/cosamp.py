@@ -92,10 +92,8 @@ def cs_cosamp(
                 support=new_support.copy(),
             )
 
-        # 9. Update support
         support_prev = new_support
 
-        # 10. Điều kiện dừng
         if r_norm < tol:
             stop_reason = "tol_reached"
             break

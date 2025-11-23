@@ -13,6 +13,9 @@ class PatternGenerator:
         self.seed = seed
         self.N = img_shape[0] * img_shape[1]
 
+    def set_pattern_type(self, pattern_type):
+        self.pattern_type = pattern_type
+
     def generate(self, M):
         if self.seed is not None:
             np.random.seed(self.seed)

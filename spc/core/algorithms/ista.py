@@ -77,7 +77,7 @@ def cs_ista(
         resn = float(np.linalg.norm(res))
 
         if info is not None and info.iteration_log:
-                    sparsity = int(np.count_nonzero(x_hat))
+            sparsity = int(np.count_nonzero(x_hat))
 
             info.add_iteration(
                 residual_norm=resn,
