@@ -1,13 +1,20 @@
 [
     {
         "name": "t01",
-        "image_size": [
+        "image_shape": [
             64,
             64
         ],
-        "sparsity_level": 0.25,
-        "transform_type": "NONE",
+        "seed": 42,
+        "pattern_type": "GAUSSIAN",
+        "transform_type": "DCT",
         "noise_db": 10,
+        "noise_type": "GAUSSIAN",
+        "image_path": "mnist_cs/mnist_0001.png",
+        "sparsity_level": 0.25,
+        "measurement_rate": 0.25,
+        "tol": 1e-6,
+        "max_iter": 1000,
         "loop_count": 20
     }
 ]

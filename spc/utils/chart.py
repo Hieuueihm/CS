@@ -8,12 +8,6 @@ class ChartUtils:
         self.info = algo_info
         self.figsize = figsize
 
-    def summary(self):
-        pass
-
-    def save_json(self):
-        pass
-
     def plot_image(self, img, title="Image", cmap="gray", figsize=None, save_path=None):
 
         arr = np.array(img)
@@ -46,7 +40,6 @@ class ChartUtils:
 
         arr = np.array(coeffs)
 
-        # Nếu là vector → reshape về ảnh vuông
         if arr.ndim == 1:
             side = int(np.sqrt(len(arr)))
             if side * side == len(arr):
@@ -64,6 +57,36 @@ class ChartUtils:
         plt.imshow(mag, cmap=cmap)
         plt.title(title)
         plt.axis("off")
+
+        if save_path:
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
+            plt.savefig(save_path, bbox_inches="tight", dpi=300)
+
+        plt.show()
+
+    def plot_convergence(
+        self,
+        residuals=None,
+        title="Convergence Curve",
+        figsize=None,
+        save_path=None,
+        log_scale=True,
+    ):
+
+        # Extract residual norms
+        # residuals = [it["residual_norm"] for it in self.info.iterations]
+        residuals = residuals if residuals is not None else []
+        plt.figure(figsize=figsize if figsize else self.figsize)
+
+        if log_scale:
+            plt.semilogy(residuals, marker="o", markersize=3)
+        else:
+            plt.plot(residuals, marker="o", markersize=3)
+
+        plt.title(title)
+        plt.xlabel("Iteration")
+        plt.ylabel("Residual Norm")
+        plt.grid(True, alpha=0.3)
 
         if save_path:
             os.makedirs(os.path.dirname(save_path), exist_ok=True)

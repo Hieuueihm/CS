@@ -2,7 +2,7 @@ import numpy as np
 
 
 class NoiseGenerator:
-    def __init__(self, snr_db=30, noise_type="gaussian", seed=None):
+    def __init__(self, snr_db=30, noise_type="GAUSSIAN", seed=None):
 
         self.snr_db = snr_db
         self.noise_type = noise_type
@@ -16,7 +16,7 @@ class NoiseGenerator:
 
         noise_power = signal_power / (10 ** (self.snr_db / 10))
 
-        if self.noise_type == "gaussian":
+        if self.noise_type == "GAUSSIAN":
             noise = np.sqrt(noise_power) * np.random.randn(*y_clean.shape)
         else:
             raise ValueError(f"Unsupported noise type: {self.noise_type}")

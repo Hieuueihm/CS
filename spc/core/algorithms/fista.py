@@ -58,28 +58,21 @@ def cs_fista(
     x_prev = np.zeros(n)
     x_curr = np.zeros(n)
     t_prev = 1.0
+    L = np.linalg.norm(A, 2) ** 2
+    muy = 1.0 / (L + 1e-12)
 
     t0 = time.time()
     stop_reason = "max_iter_reached"
 
     for it in range(1, max_iter + 1):
         t_curr = (1.0 + np.sqrt(1.0 + 4.0 * t_prev**2)) / 2.0
-
-        r = y - A @ x_curr
-        g = A.T @ r
-
-        Ag = A @ g
-        num = g @ g
-        den = Ag @ Ag + 1e-12
-        alpha = float(num / den)
-
         z = x_curr + ((t_prev - 1.0) / t_curr) * (x_curr - x_prev)
 
         r_z = y - A @ z
         g_z = A.T @ r_z
-        z = z + alpha * g_z
+        u = z + muy * g_z
 
-        x_next = np.sign(z) * np.maximum(np.abs(z) - alpha * lambda_, 0.0)
+        x_next = np.sign(u) * np.maximum(np.abs(u) - muy * lambda_, 0.0)
 
         dx_rel = float(
             np.linalg.norm(x_next - x_curr) / (np.linalg.norm(x_next) + 1e-12)
@@ -92,7 +85,7 @@ def cs_fista(
             info.add_iteration(
                 residual_norm=resn,
                 sparsity=sparsity,
-                step_size=alpha,
+                step_size=muy,
                 support=None,
             )
 

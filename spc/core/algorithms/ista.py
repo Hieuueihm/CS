@@ -66,11 +66,11 @@ def cs_ista(
         Ag = A @ g
         num = g @ g
         den = Ag @ Ag + 1e-12
-        alpha = float(num / den)
+        muy = float(num / den)
 
-        x_tmp = x_prev + alpha * g
+        x_tmp = x_prev + muy * g
 
-        x_hat = np.sign(x_tmp) * np.maximum(np.abs(x_tmp) - alpha * lambda_, 0.0)
+        x_hat = np.sign(x_tmp) * np.maximum(np.abs(x_tmp) - muy * lambda_, 0.0)
 
         dx_rel = float(np.linalg.norm(x_hat - x_prev) / (np.linalg.norm(x_hat) + 1e-12))
         res = y - A @ x_hat
@@ -82,7 +82,7 @@ def cs_ista(
             info.add_iteration(
                 residual_norm=resn,
                 sparsity=sparsity,
-                step_size=alpha,
+                step_size=muy,
                 support=None,
             )
 

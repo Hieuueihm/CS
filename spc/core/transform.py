@@ -4,9 +4,9 @@ import numpy as np
 
 
 class TransformKind(Enum):
-    DCT = "dct"
-    FFT = "fft"
-    NONE = "no_transform"
+    DCT = "DCT"
+    FFT = "FFT"
+    NONE = "NO_TRANSFORM"
 
 
 class Transform:
@@ -14,6 +14,9 @@ class Transform:
         self.N = img_shape[0] * img_shape[1]
         self.kind = kind
         self.img_shape = img_shape
+
+    def set_transfrom_kind(self, kind):
+        self.kind = kind
 
     def forward(self, x):
         img = x.reshape(self.img_shape)
@@ -23,8 +26,14 @@ class Transform:
 
         elif self.kind == TransformKind.FFT:
             return self._forward_fft(img)
+        elif self.kind == TransformKind.NONE:
+            return img
         else:
             raise ValueError(f"Unsupported transform kind: {self.kind}")
+
+    def flatten_forward(self, x):
+        coeffs = self.forward(x)
+        return coeffs.reshape(-1)
 
     def inverse(self, coeffs):
         if self.kind == TransformKind.DCT:
@@ -32,7 +41,8 @@ class Transform:
 
         elif self.kind == TransformKind.FFT:
             img = self._inverse_fft(coeffs)
-
+        elif self.kind == TransformKind.NONE:
+            img = coeffs
         else:
             raise ValueError(f"Unsupported transform kind: {self.kind}")
 

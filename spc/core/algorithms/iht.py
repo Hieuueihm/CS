@@ -52,18 +52,24 @@ def cs_iht(
         k = m // 4
 
     info = AlgorithmInformation(algorithm_name="iht") if return_info else None
-    if info is not None:
-        if ignore_iteration_log:
-            info.iteration_log = False
-        info.set_meta("k", k)
-        info.set_meta("max_iter", max_iter)
-        info.set_meta("step", step)
 
     hat_x_prev = np.zeros(n)
 
     prev_resn = None
     t0 = time.time()
     stop_reason = "max_iter_reached"
+
+    A = np.asarray(A, dtype=float)
+
+    L = np.linalg.norm(A, ord=2) ** 2
+    step = 1.0 / L
+
+    if info is not None:
+        if ignore_iteration_log:
+            info.iteration_log = False
+        info.set_meta("k", k)
+        info.set_meta("max_iter", max_iter)
+        info.set_meta("step", step)
 
     for _ in range(1, max_iter + 1):
         grad = A.T @ (y - A @ hat_x_prev)

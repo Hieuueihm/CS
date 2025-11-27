@@ -1,3 +1,6 @@
+import json
+
+
 class AlgorithmInformation:
     OMP_STOP_INFORMATION = "omp_stop_information"
     IHT_STOP_INFORMATION = "iht_stop_information"
@@ -15,9 +18,9 @@ class AlgorithmInformation:
         self.iteration_log = iteration_log
         self.history = {
             "residual_norm": [],  # ||r_k||
-            "sparsity": [],  # số phần tử khác 0
-            "step_size": [],  #  gradient / learning rate
-            "support": [],  # support (OMP, IHT)
+            "sparsity": [],
+            "step_size": [],
+            "support": [],
         }
 
         self.meta = {}
@@ -67,10 +70,13 @@ class AlgorithmInformation:
         }
 
     def __repr__(self):
-        return {
-            "algorithm_name": self.algorithm_name,
-            "stop_reason": self.stop_reason,
-            "num_iterations": self.num_iterations,
-            "meta": self.meta,
-            "time": self.time,
-        }
+        return json.dumps(
+            {
+                "algorithm_name": self.algorithm_name,
+                "stop_reason": self.stop_reason,
+                "num_iterations": self.num_iterations,
+                "meta": self.meta,
+                "time": self.time,
+            },
+            indent=4,
+        )

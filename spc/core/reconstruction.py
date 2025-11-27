@@ -37,27 +37,65 @@ class BaseReconstructor:
         self.params = params if params is not None else ExperimentConfig()
 
     def reconstruct(self, y, algorithm=None, **kwargs):
-        return_info = kwargs.get("return_info", True)
-        ignore_iteration_log = kwargs.get("ignore_iteration_log", False)
+        return_info = kwargs.pop("return_info", True)
+        ignore_iteration_log = kwargs.pop("ignore_iteration_log", False)
+
+        algo_kwargs = kwargs
+
         if algorithm is not None:
             self.algorithm = algorithm
+
         if self.algorithm == ReconstructionAlgorithms.OMP:
-            return self._reconstruct_omp(y, return_info, ignore_iteration_log)
+            return self._reconstruct_omp(
+                y,
+                return_info=return_info,
+                ignore_iteration_log=ignore_iteration_log,
+                **algo_kwargs,
+            )
         elif self.algorithm == ReconstructionAlgorithms.IHT:
-            return self._reconstruct_iht(y, return_info, ignore_iteration_log)
+            return self._reconstruct_iht(
+                y,
+                return_info=return_info,
+                ignore_iteration_log=ignore_iteration_log,
+                **algo_kwargs,
+            )
         elif self.algorithm == ReconstructionAlgorithms.FISTA:
-            return self._reconstruct_fista(y, return_info, ignore_iteration_log)
+            return self._reconstruct_fista(
+                y,
+                return_info=return_info,
+                ignore_iteration_log=ignore_iteration_log,
+                **algo_kwargs,
+            )
         elif self.algorithm == ReconstructionAlgorithms.ISTA:
-            return self._reconstruct_ista(y, return_info, ignore_iteration_log)
+            return self._reconstruct_ista(
+                y,
+                return_info=return_info,
+                ignore_iteration_log=ignore_iteration_log,
+                **algo_kwargs,
+            )
         elif self.algorithm == ReconstructionAlgorithms.COSAMP:
-            return self._reconstruct_cosamp(y, return_info, ignore_iteration_log)
+            return self._reconstruct_cosamp(
+                y,
+                return_info=return_info,
+                ignore_iteration_log=ignore_iteration_log,
+                **algo_kwargs,
+            )
         elif self.algorithm == ReconstructionAlgorithms.SP:
-            return self._reconstruct_sp(y, return_info, ignore_iteration_log)
+            return self._reconstruct_sp(
+                y,
+                return_info=return_info,
+                ignore_iteration_log=ignore_iteration_log,
+                **algo_kwargs,
+            )
         else:
             raise ValueError(f"Unknown reconstruction algorithm: {self.algorithm}")
 
     def _reconstruct_omp(
-        self, measurement_vector, return_info=True, ignore_iteration_log=False
+        self,
+        measurement_vector,
+        return_info=True,
+        ignore_iteration_log=False,
+        **algo_kwargs,
     ):
         return cs_omp(
             measurement_vector,
@@ -65,30 +103,45 @@ class BaseReconstructor:
             self.k,
             return_info=return_info,
             ignore_iteration_log=ignore_iteration_log,
+            **algo_kwargs,
         )
 
     def _reconstruct_ista(
-        self, measurement_vector, return_info=True, ignore_iteration_log=False
+        self,
+        measurement_vector,
+        return_info=True,
+        ignore_iteration_log=False,
+        **algo_kwargs,
     ):
         return cs_ista(
             measurement_vector,
             self.A,
             return_info=return_info,
             ignore_iteration_log=ignore_iteration_log,
+            **algo_kwargs,
         )
 
     def _reconstruct_fista(
-        self, measurement_vector, return_info=True, ignore_iteration_log=False
+        self,
+        measurement_vector,
+        return_info=True,
+        ignore_iteration_log=False,
+        **algo_kwargs,
     ):
         return cs_fista(
             measurement_vector,
             self.A,
             return_info=return_info,
             ignore_iteration_log=ignore_iteration_log,
+            **algo_kwargs,
         )
 
     def _reconstruct_cosamp(
-        self, measurement_vector, return_info=True, ignore_iteration_log=False
+        self,
+        measurement_vector,
+        return_info=True,
+        ignore_iteration_log=False,
+        **algo_kwargs,
     ):
         return cs_cosamp(
             measurement_vector,
@@ -96,10 +149,15 @@ class BaseReconstructor:
             self.k,
             return_info=return_info,
             ignore_iteration_log=ignore_iteration_log,
+            **algo_kwargs,
         )
 
     def _reconstruct_sp(
-        self, measurement_vector, return_info=True, ignore_iteration_log=False
+        self,
+        measurement_vector,
+        return_info=True,
+        ignore_iteration_log=False,
+        **algo_kwargs,
     ):
         return cs_sp(
             measurement_vector,
@@ -107,10 +165,15 @@ class BaseReconstructor:
             self.k,
             return_info=return_info,
             ignore_iteration_log=ignore_iteration_log,
+            **algo_kwargs,
         )
 
     def _reconstruct_iht(
-        self, measurement_vector, return_info=True, ignore_iteration_log=False
+        self,
+        measurement_vector,
+        return_info=True,
+        ignore_iteration_log=False,
+        **algo_kwargs,
     ):
         return cs_iht(
             measurement_vector,
@@ -118,4 +181,5 @@ class BaseReconstructor:
             self.k,
             return_info=return_info,
             ignore_iteration_log=ignore_iteration_log,
+            **algo_kwargs,
         )

@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 from skimage import data, color, transform as sk_transform
 import psutil
 import math
+from torchvision import datasets, transforms
+from PIL import Image
+import pandas as pd
 
 
 def pin_process():
@@ -40,41 +43,20 @@ from core.transform import Transform, TransformKind
 from core.noise import NoiseGenerator
 
 
-def load_astronomy_image(img_shape=(64, 64), normalize=True):
-    img = data.hubble_deep_field()
-    img = color.rgb2gray(img)
-
-    img = sk_transform.resize(img, img_shape)
-
-    arr = img.astype(np.float32)
-
-    if normalize:
-        arr = arr / arr.max()
-
-    return arr
-
-
-IMAGE_SHAPE = (64, 64)
-SEED = 42
 EXPERIMENT_FOLDER = "experiments"
+RESULTS_FOLDER = "results"
 DATA_FOLDER = "data"
-FIG_SIZE = (6, 6)
+CHART_FIG_SIZE = (4, 4)
 
 
-def load_mnist_digit(index=0, img_shape=IMAGE_SHAPE, normalize=True):
-    mnist = fetch_openml("mnist_784", version=1, as_frame=False)
-
-    X = mnist["data"]
-    y = mnist["target"]
-
-    img28 = X[index].reshape(28, 28).astype(np.uint8)
-
-    pil_img = Image.fromarray(img28).resize(img_shape, Image.BILINEAR)
-    arr = np.array(pil_img, dtype=np.float32)
-
-    if normalize:
-        arr = arr / 255.0
-    return arr, int(y[index])
+algo_list = [
+    ReconstructionAlgorithms.OMP,
+    ReconstructionAlgorithms.IHT,
+    ReconstructionAlgorithms.COSAMP,
+    ReconstructionAlgorithms.SP,
+    ReconstructionAlgorithms.ISTA,
+    ReconstructionAlgorithms.FISTA,
+]
 
 
 def read_image(filepath, size):
@@ -89,63 +71,109 @@ if __name__ == "__main__":
     pin_process()
 
     config = ExperimentConfig()
-    algorithms = BaseReconstructor(N=IMAGE_SHAPE[0] * IMAGE_SHAPE[1])
-    pattern = PatternGenerator(
-        IMAGE_SHAPE, pattern_type=PatternType.BERNOULLI, seed=SEED
-    )
-    noise = NoiseGenerator(noise_type="gaussian", seed=SEED)
-    chart_utils = ChartUtils(algo_info={}, figsize=FIG_SIZE)
-    # img = read_image(os.path.join(DATA_FOL
-    # DER, "lena.png"), IMAGE_SHAPE)
-    # chart_utils.plot_image(img, title="Original Image", save_path=None)
-    transform = Transform(img_shape=IMAGE_SHAPE, kind=TransformKind.FFT)
-
-    # coeffs = transform.forward(img)
-
-    pattern.set_pattern_type(PatternType.GAUSSIAN)
-    # img, label = load_mnist_digit(index=1, img_shape=IMAGE_SHAPE)
-    # chart_utils.plot_image(img, title="Original Image", save_path=None)
-
-    # print("Digit label:", label)
-    # print("Shape:", img.shape)
-    # chart_utils.plot_frequency(
-    #     coeffs,
-    #     title="Frequency Domain (FFT Magnitude)",
-    #     save_path=None,
-    # )
-
-    img = load_astronomy_image(IMAGE_SHAPE)
-    # chart_utils.plot_image(img, title="Astronomy Image")
-
-    x = img.reshape(-1)
-
     with open(os.path.join(EXPERIMENT_FOLDER, "test_case.json"), "r") as f:
         tc = json.load(f)
-
     for _ in range(len(tc)):
         config.from_json(tc[_])
-        A = pattern.generate(
-            M=int(config.sparsity_level * IMAGE_SHAPE[0] * IMAGE_SHAPE[1])
+        tc_name = config.name
+        image_shape = config.image_shape
+        seed = config.seed
+        pattern_type = config.pattern_type
+        transform_type = config.transform_type
+        noise_db = config.noise_db
+        noise_type = config.noise_type
+        image_path = config.image_path
+        save_path = os.path.join(RESULTS_FOLDER, f"{tc_name}")
+        os.makedirs(save_path, exist_ok=True)
+
+        print(
+            f"Running test case {_ + 1}/{len(tc)}: image_shape={image_shape} image_path = {image_path}"
         )
+        image_dir = os.path.join(DATA_FOLDER, image_path)
 
-        snr_db = config.noise_db
-        noise.snr_db = snr_db
+        algorithms = BaseReconstructor(N=image_shape[0] * image_shape[1])
+        pattern = PatternGenerator(img_shape=image_shape, seed=seed)
 
-        y_clean = A @ x
-        y_noisy = noise.add_fixed_noise(y_clean)
-
-        # reconstructor
-        algorithms.A = A
-        algorithms.k = math.floor(config.sparsity_level * x.shape[0])
-        x_rec, info = algorithms.reconstruct(
-            y=y_clean, algorithm=ReconstructionAlgorithms.OMP
+        if pattern_type == "BERNOULLI":
+            pattern.set_pattern_type(PatternType.BERNOULLI)
+        elif pattern_type == "GAUSSIAN":
+            pattern.set_pattern_type(PatternType.GAUSSIAN)
+        else:
+            raise ValueError("Unsupported pattern type")
+        print(
+            f"Using pattern type: {pattern_type} and transform type: {transform_type}"
         )
-        print(info.get())
-        x_rec_img = x_rec.reshape(IMAGE_SHAPE)
-        snr_db = psnr(x, x_rec.astype(np.float32))
+        pattern.set_transform_type(transform_type)
 
-        chart_utils.plot_image(
-            x_rec_img,
-            title=f"Reconstructed Image (SNR={snr_db} dB)",
-            save_path=None,
-        )
+        transform = Transform(img_shape=image_shape)
+        if transform_type == "DCT":
+            transform.set_transfrom_kind(TransformKind.DCT)
+        elif transform_type == "FFT":
+            transform.set_transfrom_kind(TransformKind.FFT)
+        elif transform_type == "NONE":
+            transform.set_transfrom_kind(TransformKind.NONE)
+        else:
+            raise ValueError("Unsupported transform type")
+
+        noise = NoiseGenerator(noise_type=noise_type, seed=seed)
+        chart_utils = ChartUtils(algo_info={}, figsize=CHART_FIG_SIZE)
+
+        img = read_image(image_dir, image_shape)  # img = data.hubble_deep_field()
+        # img = color.rgb2gray(img)
+        # img = sk_transform.resize(img, image_shape)
+        x = img.ravel()
+
+        N = image_shape[0] * image_shape[1]
+
+        M = math.floor(config.measurement_rate * N)
+        print(f"Number of measurements M: {M}")
+
+        ## running
+        coeffs = transform.forward(img)
+        x = coeffs.ravel()
+
+        for algo in algo_list:
+            for i in range(config.loop_count):
+                pattern.seed = seed + i
+                A = pattern.generate(M)
+                y = A @ x
+                algorithms.A = A
+                algorithms.k = int(config.sparsity_level * M)
+
+                x_rec, info = algorithms.reconstruct(
+                    y=y, algorithm=algo, tol=config.tol, max_iter=config.max_iter
+                )
+
+                # img_rec = x_rec.reshape(image_shape)
+                coeffs_rec = x_rec.reshape(image_shape)
+                img_rec = transform.inverse(coeffs_rec)
+
+                ssim_val = ssim(img, img_rec)
+                psnr_val = psnr(img, img_rec, data_range=1.0)
+                mse_val = mse(img, img_rec)
+                print(
+                    f"SSIM: {ssim_val:.4f}, PSNR: {psnr_val:.2f} dB, MSE: {mse_val:.6f}"
+                )
+                # chart_utils.plot_image(
+                #     img_rec,
+                #     title=f"{algo} Reconstruction",
+                #     save_path=None,
+                # )
+
+                residual_norm = info.history.get("residual_norm", [])
+
+                al_path = os.path.join(save_path, f"{algo.value}")
+                os.makedirs(al_path, exist_ok=True)
+
+                xlsx_path = os.path.join(
+                    al_path, f"{algo.value}_residuals_run_{i+1}.xlsx"
+                )
+
+                df = pd.DataFrame({"residual_norm": residual_norm})
+                df.to_excel(xlsx_path, index=False)
+                # chart_utils.plot_convergence(
+                #     residuals=residual_norm, title=f"{algo} Convergence", save_path=None
+                # )
+
+                # break
+            break
