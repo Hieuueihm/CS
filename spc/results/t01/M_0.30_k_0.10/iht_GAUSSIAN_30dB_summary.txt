@@ -1,4 +1,5 @@
-AVERAGE SSIM: 0.4717, PSNR: 21.85 dB, MSE: 0.006527
-AVERAGE CPU: 5.375s
+AVERAGE SSIM: 0.4305, PSNR: 20.01 dB, MSE: 0.009979
+AVERAGE CPU: 2.312s
 AVERAGE Static Memory (MB): 38.42
 AVERAGE Peak Memory (MB): 38.49
+stop reason: iht_stop_information:psnr_threshold_reached

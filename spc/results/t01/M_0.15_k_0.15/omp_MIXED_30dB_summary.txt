@@ -1,4 +1,5 @@
 AVERAGE SSIM: 0.0570, PSNR: 8.99 dB, MSE: 0.126196
-AVERAGE CPU: 11.297s
+AVERAGE CPU: 23.469s
 AVERAGE Static Memory (MB): 19.26
 AVERAGE Peak Memory (MB): 21.61
+stop reason: omp_stop_information:max_iter_reached
