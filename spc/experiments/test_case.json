@@ -8,13 +8,51 @@
         "seed": 42,
         "pattern_type": "GAUSSIAN",
         "transform_type": "DCT",
-        "noise_db": 10,
-        "noise_type": "GAUSSIAN",
         "image_path": "mnist_cs/mnist_0001.png",
-        "sparsity_level": 0.25,
-        "measurement_rate": 0.25,
         "tol": 1e-6,
-        "max_iter": 1000,
-        "loop_count": 20
+        "max_iter": 500,
+        "loop_count": 1
+    },
+    {
+        "name": "t02",
+        "image_shape": [
+            64,
+            64
+        ],
+        "seed": 42,
+        "pattern_type": "GAUSSIAN",
+        "transform_type": "NONE",
+        "image_path": "mnist_cs/mnist_0001.png",
+        "tol": 1e-6,
+        "max_iter": 500,
+        "loop_count": 1
+    },
+    {
+        "name": "t03",
+        "image_shape": [
+            64,
+            64
+        ],
+        "seed": 42,
+        "pattern_type": "BERNOULLI",
+        "transform_type": "DCT",
+        "image_path": "mnist_cs/mnist_0001.png",
+        "tol": 1e-6,
+        "max_iter": 500,
+        "loop_count": 1
+    },
+    {
+        "name": "t04",
+        "image_shape": [
+            64,
+            64
+        ],
+        "seed": 42,
+        "pattern_type": "BERNOULLI",
+        "transform_type": "NONE",
+        "image_path": "mnist_cs/mnist_0001.png",
+        "tol": 1e-6,
+        "max_iter": 500,
+        "loop_count": 1
     }
 ]

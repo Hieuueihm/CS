@@ -1,5 +1,6 @@
 import numpy as np
 import time
+from core.metrics import psnr
 
 
 def cs_cosamp(
@@ -7,9 +8,12 @@ def cs_cosamp(
     A,
     k,
     max_iter=50,
-    tol=1e-9,
+    tol=1e-6,
     return_info=True,
     ignore_iteration_log=False,
+    measure_memory=False,
+    x_true=None,
+    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -32,6 +36,8 @@ def cs_cosamp(
         Whether to return additional information about the algorithm's execution.
     ignore_iteration_log : bool, optional
         If True, do not log per-iteration information.
+    measure_memory : bool, optional
+        If True, estimate static and peak memory usage based on array sizes.
 
     Returns
     -------
@@ -60,8 +66,19 @@ def cs_cosamp(
     residual = y.copy()
     support_prev = np.array([], dtype=int)
 
+    # --------- MEMORY: static + peak (ước lượng) ----------
+    if measure_memory:
+        # static: A, y, hat_x, residual ban đầu
+        static_bytes = A.nbytes + y.nbytes + hat_x.nbytes + residual.nbytes
+        peak_bytes = static_bytes
+    else:
+        static_bytes = None
+        peak_bytes = None
+    # ------------------------------------------------------
+
     t0 = time.time()
     stop_reason = "max_iter_reached"
+    prev_resn = None
 
     for _ in range(1, max_iter + 1):
         #  c = A^T r
@@ -85,6 +102,17 @@ def cs_cosamp(
         residual = y - A @ x_temp
         r_norm = np.linalg.norm(residual)
 
+        # ---------- MEMORY: dynamic + peak update ----------
+        if measure_memory:
+            # dynamic: proxy, A_S, b_S, x_temp, residual
+            dynamic_bytes = (
+                proxy.nbytes + A_S.nbytes + b_S.nbytes + x_temp.nbytes + residual.nbytes
+            )
+            current_bytes = static_bytes + dynamic_bytes
+            if current_bytes > peak_bytes:
+                peak_bytes = current_bytes
+        # ---------------------------------------------------
+
         if info is not None and info.iteration_log:
             info.add_iteration(
                 residual_norm=r_norm,
@@ -93,10 +121,23 @@ def cs_cosamp(
             )
 
         support_prev = new_support
+        if prev_resn is not None:
+            rel_change = abs(prev_resn - r_norm) / max(prev_resn, 1e-12)
+            if rel_change <= tol:
+                stop_reason = "residual_converged"
+                support_prev = new_support
+                hat_x = x_temp
+                break
 
         if r_norm < tol:
             stop_reason = "tol_reached"
             break
+        if x_true is not None:
+            current_psnr = psnr(x_true, x_temp, data_range=1.0)
+            if current_psnr >= psnr_threshold:
+                stop_reason = "psnr_threshold_reached"
+                break
+        prev_resn = r_norm
 
     t1 = time.time()
     hat_x = x_temp
@@ -106,6 +147,11 @@ def cs_cosamp(
             AlgorithmInformation.COSAMP_STOP_INFORMATION + ":" + stop_reason
         )
         info.set_time(t1 - t0)
+
+        if measure_memory:
+            info.set_meta("memory_static_MB", static_bytes / (1024**2))
+            info.set_meta("memory_peak_MB", peak_bytes / (1024**2))
+
         return hat_x, info
 
-    return hat_x
+    return hat_x, None

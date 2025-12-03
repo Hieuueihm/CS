@@ -1,5 +1,6 @@
 import numpy as np
 import time
+from core.metrics import psnr
 
 
 def cs_ista(
@@ -10,6 +11,9 @@ def cs_ista(
     max_iter=1000,
     return_info=True,
     ignore_iteration_log=False,
+    measure_memory=False,
+    x_true=None,
+    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -35,6 +39,8 @@ def cs_ista(
         Whether to return AlgorithmInformation.
     ignore_iteration_log : bool, optional
         If True, do not log per-iteration information.
+    measure_memory : bool, optional
+        If True, estimate static and peak memory usage based on array sizes.
 
     Returns
     -------
@@ -56,12 +62,23 @@ def cs_ista(
 
     x_prev = np.zeros(n)
 
+    # --------- MEMORY: static + peak (ước lượng) ----------
+    if measure_memory:
+        # static: A, y, x_prev
+        static_bytes = A.nbytes + y.nbytes + x_prev.nbytes
+        peak_bytes = static_bytes
+    else:
+        static_bytes = None
+        peak_bytes = None
+    # ------------------------------------------------------
+
     t0 = time.time()
     stop_reason = "max_iter_reached"
 
     for _ in range(1, max_iter + 1):
-        r = y - A @ x_prev
-        g = A.T @ r
+        # Gradient-like step
+        r = y - A @ x_prev  # residual
+        g = A.T @ r  # gradient
 
         Ag = A @ g
         num = g @ g
@@ -75,6 +92,22 @@ def cs_ista(
         dx_rel = float(np.linalg.norm(x_hat - x_prev) / (np.linalg.norm(x_hat) + 1e-12))
         res = y - A @ x_hat
         resn = float(np.linalg.norm(res))
+
+        # ---------- MEMORY: dynamic + peak update ----------
+        if measure_memory:
+            # dynamic: r, g, Ag, x_tmp, x_hat, res
+            dynamic_bytes = (
+                r.nbytes
+                + g.nbytes
+                + Ag.nbytes
+                + x_tmp.nbytes
+                + x_hat.nbytes
+                + res.nbytes
+            )
+            current_bytes = static_bytes + dynamic_bytes
+            if current_bytes > peak_bytes:
+                peak_bytes = current_bytes
+        # ---------------------------------------------------
 
         if info is not None and info.iteration_log:
             sparsity = int(np.count_nonzero(x_hat))
@@ -92,6 +125,11 @@ def cs_ista(
         if resn < tol:
             stop_reason = "residual"
             break
+        if x_true is not None:
+            current_psnr = psnr(x_true, x_hat, data_range=1.0)
+            if current_psnr >= psnr_threshold:
+                stop_reason = "psnr_threshold_reached"
+                break
 
         x_prev = x_hat
 
@@ -102,6 +140,11 @@ def cs_ista(
             AlgorithmInformation.ISTA_STOP_INFORMATION + ":" + stop_reason
         )
         info.set_time(t1 - t0)
+
+        if measure_memory:
+            info.set_meta("memory_static_MB", static_bytes / (1024**2))
+            info.set_meta("memory_peak_MB", peak_bytes / (1024**2))
+
         return x_hat, info
 
-    return x_hat
+    return x_hat, None

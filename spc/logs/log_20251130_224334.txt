@@ -1,0 +1,2460 @@
+Running test case 1/6: image_shape=(64, 64) image_path = mnist_cs/mnist_0001.png
+Using pattern type: GAUSSIAN and transform type: DCT
+Measurement M: 204 / 4096, Sparsity level k: 40 / 4096
+OMP finished: sparsity_level_reached
+[omp CLEAN run 1] wall=0.019s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1037, PSNR: 9.92 dB, MSE: 0.101874
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 2] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0077, PSNR: 6.92 dB, MSE: 0.203197
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 3] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0800, PSNR: 9.18 dB, MSE: 0.120688
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 4] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1049, PSNR: 9.66 dB, MSE: 0.108108
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 5] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0918, PSNR: 9.53 dB, MSE: 0.111527
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 6] wall=0.020s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1260, PSNR: 11.12 dB, MSE: 0.077312
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 7] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1049, PSNR: 9.42 dB, MSE: 0.114360
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 8] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0680, PSNR: 8.97 dB, MSE: 0.126681
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 9] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0667, PSNR: 8.75 dB, MSE: 0.133301
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 10] wall=0.018s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0914, PSNR: 9.64 dB, MSE: 0.108711
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 11] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0784, PSNR: 8.84 dB, MSE: 0.130764
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 12] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0622, PSNR: 7.85 dB, MSE: 0.164078
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 13] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0735, PSNR: 9.49 dB, MSE: 0.112495
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 14] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0359, PSNR: 8.54 dB, MSE: 0.140113
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 15] wall=0.028s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0556, PSNR: 8.66 dB, MSE: 0.136214
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 16] wall=0.023s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1169, PSNR: 9.67 dB, MSE: 0.107813
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 17] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0889, PSNR: 9.63 dB, MSE: 0.108825
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 18] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0722, PSNR: 9.18 dB, MSE: 0.120852
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 19] wall=0.019s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1451, PSNR: 10.69 dB, MSE: 0.085362
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 20] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0893, PSNR: 9.43 dB, MSE: 0.114142
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 21] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0793, PSNR: 8.64 dB, MSE: 0.136786
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 22] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1175, PSNR: 10.38 dB, MSE: 0.091576
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 23] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1281, PSNR: 10.91 dB, MSE: 0.081184
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 24] wall=0.028s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0577, PSNR: 8.62 dB, MSE: 0.137545
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 25] wall=0.047s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0649, PSNR: 8.82 dB, MSE: 0.131083
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 26] wall=0.034s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0360, PSNR: 8.50 dB, MSE: 0.141265
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 27] wall=0.026s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0757, PSNR: 9.32 dB, MSE: 0.117009
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 28] wall=0.035s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1033, PSNR: 9.70 dB, MSE: 0.107202
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 29] wall=0.022s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1376, PSNR: 9.84 dB, MSE: 0.103691
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 30] wall=0.034s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0898, PSNR: 8.75 dB, MSE: 0.133243
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 31] wall=0.034s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0702, PSNR: 8.78 dB, MSE: 0.132565
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 32] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0848, PSNR: 8.50 dB, MSE: 0.141319
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 33] wall=0.045s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0995, PSNR: 9.89 dB, MSE: 0.102566
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 34] wall=0.020s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0847, PSNR: 9.44 dB, MSE: 0.113885
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 35] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1296, PSNR: 10.50 dB, MSE: 0.089171
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 36] wall=0.026s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1096, PSNR: 9.78 dB, MSE: 0.105158
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 37] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0944, PSNR: 9.91 dB, MSE: 0.102055
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 38] wall=0.028s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0682, PSNR: 9.30 dB, MSE: 0.117491
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 39] wall=0.049s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0428, PSNR: 8.93 dB, MSE: 0.128035
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 40] wall=0.022s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0424, PSNR: 8.53 dB, MSE: 0.140400
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 41] wall=0.025s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1100, PSNR: 9.81 dB, MSE: 0.104394
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 42] wall=0.024s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1569, PSNR: 11.63 dB, MSE: 0.068777
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 43] wall=0.023s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0688, PSNR: 8.24 dB, MSE: 0.149977
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 44] wall=0.026s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1005, PSNR: 9.36 dB, MSE: 0.115853
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 45] wall=0.019s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0892, PSNR: 8.97 dB, MSE: 0.126772
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 46] wall=0.020s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1353, PSNR: 10.77 dB, MSE: 0.083667
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 47] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0962, PSNR: 9.39 dB, MSE: 0.115040
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 48] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0682, PSNR: 9.00 dB, MSE: 0.125953
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 49] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1346, PSNR: 10.03 dB, MSE: 0.099343
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 50] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1170, PSNR: 9.94 dB, MSE: 0.101360
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 51] wall=0.027s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0506, PSNR: 7.72 dB, MSE: 0.168933
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 52] wall=0.039s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0887, PSNR: 9.47 dB, MSE: 0.112905
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 53] wall=0.023s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1112, PSNR: 9.97 dB, MSE: 0.100657
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 54] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0642, PSNR: 9.20 dB, MSE: 0.120138
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 55] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1092, PSNR: 9.65 dB, MSE: 0.108314
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 56] wall=0.025s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1122, PSNR: 10.41 dB, MSE: 0.090899
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 57] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0844, PSNR: 9.10 dB, MSE: 0.123037
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 58] wall=0.019s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0766, PSNR: 9.35 dB, MSE: 0.116081
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 59] wall=0.045s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1149, PSNR: 9.56 dB, MSE: 0.110750
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 60] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0725, PSNR: 8.94 dB, MSE: 0.127780
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 61] wall=0.023s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0767, PSNR: 9.27 dB, MSE: 0.118371
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 62] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0701, PSNR: 9.25 dB, MSE: 0.118802
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 63] wall=0.027s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0624, PSNR: 9.82 dB, MSE: 0.104300
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 64] wall=0.046s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1126, PSNR: 10.46 dB, MSE: 0.089873
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 65] wall=0.022s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0852, PSNR: 9.14 dB, MSE: 0.121960
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 66] wall=0.026s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1597, PSNR: 10.94 dB, MSE: 0.080488
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 67] wall=0.017s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1372, PSNR: 10.74 dB, MSE: 0.084297
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 68] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0846, PSNR: 10.25 dB, MSE: 0.094348
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 69] wall=0.028s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0828, PSNR: 9.03 dB, MSE: 0.124927
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 70] wall=0.039s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1362, PSNR: 10.38 dB, MSE: 0.091548
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 71] wall=0.037s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0873, PSNR: 8.86 dB, MSE: 0.130095
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 72] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0930, PSNR: 9.66 dB, MSE: 0.108255
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 73] wall=0.023s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0553, PSNR: 9.48 dB, MSE: 0.112798
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 74] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0956, PSNR: 9.80 dB, MSE: 0.104760
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 75] wall=0.035s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0979, PSNR: 9.77 dB, MSE: 0.105382
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 76] wall=0.028s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0887, PSNR: 9.78 dB, MSE: 0.105153
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 77] wall=0.035s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0402, PSNR: 8.98 dB, MSE: 0.126347
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 78] wall=0.019s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1108, PSNR: 10.32 dB, MSE: 0.092844
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 79] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1290, PSNR: 10.36 dB, MSE: 0.092007
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 80] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1393, PSNR: 10.17 dB, MSE: 0.096192
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 81] wall=0.019s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0916, PSNR: 9.42 dB, MSE: 0.114334
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 82] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0959, PSNR: 9.77 dB, MSE: 0.105472
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 83] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0959, PSNR: 9.96 dB, MSE: 0.100935
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 84] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0855, PSNR: 9.68 dB, MSE: 0.107721
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 85] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1277, PSNR: 10.49 dB, MSE: 0.089379
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 86] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0748, PSNR: 8.72 dB, MSE: 0.134162
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 87] wall=0.024s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0840, PSNR: 9.27 dB, MSE: 0.118276
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 88] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1054, PSNR: 10.00 dB, MSE: 0.099982
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 89] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1009, PSNR: 9.60 dB, MSE: 0.109625
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 90] wall=0.034s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1014, PSNR: 9.67 dB, MSE: 0.107981
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 91] wall=0.031s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0579, PSNR: 8.88 dB, MSE: 0.129550
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 92] wall=0.016s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0395, PSNR: 8.06 dB, MSE: 0.156205
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 93] wall=0.025s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0504, PSNR: 8.97 dB, MSE: 0.126783
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 94] wall=0.044s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0904, PSNR: 9.17 dB, MSE: 0.121061
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 95] wall=0.036s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0345, PSNR: 8.63 dB, MSE: 0.137157
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 96] wall=0.025s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0676, PSNR: 9.22 dB, MSE: 0.119672
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 97] wall=0.021s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0966, PSNR: 9.86 dB, MSE: 0.103246
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 98] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1265, PSNR: 10.31 dB, MSE: 0.093024
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 99] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0723, PSNR: 9.38 dB, MSE: 0.115246
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 100] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0565, PSNR: 8.57 dB, MSE: 0.138962
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 101] wall=0.019s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1149, PSNR: 10.03 dB, MSE: 0.099206
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 102] wall=0.036s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0773, PSNR: 9.63 dB, MSE: 0.108915
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 103] wall=0.031s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1326, PSNR: 10.61 dB, MSE: 0.086907
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 104] wall=0.026s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1527, PSNR: 11.13 dB, MSE: 0.077011
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 105] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1296, PSNR: 10.58 dB, MSE: 0.087543
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 106] wall=0.021s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1005, PSNR: 10.04 dB, MSE: 0.098969
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 107] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0986, PSNR: 10.03 dB, MSE: 0.099300
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 108] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0575, PSNR: 9.47 dB, MSE: 0.112857
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 109] wall=0.020s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0984, PSNR: 9.35 dB, MSE: 0.116025
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 110] wall=0.023s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1197, PSNR: 10.60 dB, MSE: 0.087022
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 111] wall=0.027s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1248, PSNR: 10.46 dB, MSE: 0.089908
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 112] wall=0.022s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0738, PSNR: 8.54 dB, MSE: 0.140111
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 113] wall=0.024s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0745, PSNR: 8.65 dB, MSE: 0.136366
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 114] wall=0.022s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0801, PSNR: 9.54 dB, MSE: 0.111081
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 115] wall=0.043s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0534, PSNR: 9.03 dB, MSE: 0.124993
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 116] wall=0.020s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1173, PSNR: 10.00 dB, MSE: 0.100046
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 117] wall=0.021s, CPU=0.000s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0835, PSNR: 9.36 dB, MSE: 0.116004
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 118] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0810, PSNR: 9.90 dB, MSE: 0.102372
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 119] wall=0.020s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1243, PSNR: 10.57 dB, MSE: 0.087634
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 120] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0945, PSNR: 9.89 dB, MSE: 0.102630
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 121] wall=0.033s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0534, PSNR: 8.58 dB, MSE: 0.138706
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 122] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1083, PSNR: 9.95 dB, MSE: 0.101121
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 123] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1280, PSNR: 10.42 dB, MSE: 0.090771
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 124] wall=0.024s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0508, PSNR: 8.53 dB, MSE: 0.140147
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 125] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0718, PSNR: 8.97 dB, MSE: 0.126814
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 126] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1299, PSNR: 9.95 dB, MSE: 0.101174
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 127] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0665, PSNR: 9.00 dB, MSE: 0.125932
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 128] wall=0.021s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0785, PSNR: 8.99 dB, MSE: 0.126282
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 129] wall=0.023s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0407, PSNR: 8.00 dB, MSE: 0.158454
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 130] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0805, PSNR: 9.58 dB, MSE: 0.110278
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 131] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0620, PSNR: 8.83 dB, MSE: 0.130859
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 132] wall=0.025s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0536, PSNR: 8.79 dB, MSE: 0.132022
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 133] wall=0.050s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1193, PSNR: 10.34 dB, MSE: 0.092481
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 134] wall=0.018s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0779, PSNR: 9.62 dB, MSE: 0.109250
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 135] wall=0.023s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0666, PSNR: 8.95 dB, MSE: 0.127303
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 136] wall=0.024s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0951, PSNR: 9.21 dB, MSE: 0.119972
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 137] wall=0.024s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0532, PSNR: 8.30 dB, MSE: 0.148021
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 138] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0619, PSNR: 8.81 dB, MSE: 0.131563
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 139] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0688, PSNR: 9.85 dB, MSE: 0.103455
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 140] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1800, PSNR: 11.37 dB, MSE: 0.072942
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 141] wall=0.022s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0892, PSNR: 9.39 dB, MSE: 0.114955
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 142] wall=0.026s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1003, PSNR: 9.64 dB, MSE: 0.108677
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 143] wall=0.052s, CPU=0.062s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0803, PSNR: 8.48 dB, MSE: 0.141991
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 144] wall=0.029s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0990, PSNR: 9.42 dB, MSE: 0.114210
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 145] wall=0.026s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0710, PSNR: 9.19 dB, MSE: 0.120514
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 146] wall=0.039s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1003, PSNR: 9.41 dB, MSE: 0.114425
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 147] wall=0.037s, CPU=0.047s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0956, PSNR: 9.75 dB, MSE: 0.105938
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 148] wall=0.031s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1166, PSNR: 10.04 dB, MSE: 0.099115
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 149] wall=0.031s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0560, PSNR: 8.80 dB, MSE: 0.131839
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 150] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0945, PSNR: 9.50 dB, MSE: 0.112227
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 151] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0704, PSNR: 9.16 dB, MSE: 0.121283
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 152] wall=0.019s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0949, PSNR: 9.90 dB, MSE: 0.102372
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 153] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1281, PSNR: 10.10 dB, MSE: 0.097781
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 154] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0772, PSNR: 9.67 dB, MSE: 0.107783
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 155] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0429, PSNR: 8.41 dB, MSE: 0.144098
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 156] wall=0.020s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0918, PSNR: 9.80 dB, MSE: 0.104831
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 157] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0599, PSNR: 9.38 dB, MSE: 0.115372
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 158] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1202, PSNR: 10.67 dB, MSE: 0.085738
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 159] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0938, PSNR: 10.10 dB, MSE: 0.097697
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 160] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1001, PSNR: 8.52 dB, MSE: 0.140555
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 161] wall=0.020s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0903, PSNR: 9.99 dB, MSE: 0.100313
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 162] wall=0.030s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0407, PSNR: 8.11 dB, MSE: 0.154460
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 163] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1418, PSNR: 10.36 dB, MSE: 0.092017
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 164] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0749, PSNR: 9.48 dB, MSE: 0.112613
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 165] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1073, PSNR: 9.80 dB, MSE: 0.104729
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 166] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0885, PSNR: 9.65 dB, MSE: 0.108366
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 167] wall=0.021s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1038, PSNR: 9.71 dB, MSE: 0.106821
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 168] wall=0.021s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0603, PSNR: 9.03 dB, MSE: 0.124899
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 169] wall=0.017s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0616, PSNR: 9.08 dB, MSE: 0.123540
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 170] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0704, PSNR: 9.10 dB, MSE: 0.123086
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 171] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1292, PSNR: 10.10 dB, MSE: 0.097789
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 172] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1008, PSNR: 10.07 dB, MSE: 0.098435
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 173] wall=0.021s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0821, PSNR: 9.45 dB, MSE: 0.113370
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 174] wall=0.029s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0889, PSNR: 10.19 dB, MSE: 0.095674
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 175] wall=0.033s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1099, PSNR: 9.75 dB, MSE: 0.105813
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 176] wall=0.022s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1212, PSNR: 10.67 dB, MSE: 0.085691
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 177] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0616, PSNR: 9.51 dB, MSE: 0.111917
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 178] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0931, PSNR: 9.92 dB, MSE: 0.101915
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 179] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0783, PSNR: 9.12 dB, MSE: 0.122543
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 180] wall=0.022s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0568, PSNR: 8.09 dB, MSE: 0.155381
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 181] wall=0.020s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0513, PSNR: 8.86 dB, MSE: 0.130105
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 182] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0870, PSNR: 9.42 dB, MSE: 0.114411
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 183] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0717, PSNR: 9.37 dB, MSE: 0.115668
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 184] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1387, PSNR: 10.27 dB, MSE: 0.093910
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 185] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1111, PSNR: 9.61 dB, MSE: 0.109448
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 186] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0743, PSNR: 8.97 dB, MSE: 0.126848
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 187] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0831, PSNR: 9.85 dB, MSE: 0.103432
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 188] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1011, PSNR: 9.74 dB, MSE: 0.106119
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 189] wall=0.037s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1102, PSNR: 10.04 dB, MSE: 0.098995
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 190] wall=0.022s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0609, PSNR: 8.87 dB, MSE: 0.129829
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 191] wall=0.027s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0977, PSNR: 9.72 dB, MSE: 0.106606
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 192] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0742, PSNR: 8.90 dB, MSE: 0.128912
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 193] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0832, PSNR: 9.67 dB, MSE: 0.107864
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 194] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0642, PSNR: 9.16 dB, MSE: 0.121251
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 195] wall=0.016s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0772, PSNR: 9.11 dB, MSE: 0.122789
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 196] wall=0.026s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0959, PSNR: 9.78 dB, MSE: 0.105133
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 197] wall=0.022s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0764, PSNR: 9.60 dB, MSE: 0.109675
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 198] wall=0.018s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0998, PSNR: 9.81 dB, MSE: 0.104370
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 199] wall=0.035s, CPU=0.031s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.1190, PSNR: 9.68 dB, MSE: 0.107624
+stop reason: omp_stop_information:sparsity_level_reached
+OMP finished: sparsity_level_reached
+[omp CLEAN run 200] wall=0.017s, CPU=0.016s
+Static memory  (MB): 6.44061279296875
+Peak memory    (MB): 6.503173828125
+Extra dynamic  (MB): 0.06256103515625
+SSIM: 0.0833, PSNR: 9.16 dB, MSE: 0.121349
+stop reason: omp_stop_information:sparsity_level_reached
+[omp CLEAN AVERAGE] SSIM: 0.0894, PSNR: 9.50 dB, MSE: 0.113697
+[omp CLEAN AVERAGE] CPU=0.022s
+[iht CLEAN run 1] wall=0.582s, CPU=0.594s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0761, PSNR: 10.84 dB, MSE: 0.082351
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 2] wall=0.737s, CPU=0.688s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0371, PSNR: 9.60 dB, MSE: 0.109768
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 3] wall=0.899s, CPU=0.875s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0573, PSNR: 10.44 dB, MSE: 0.090465
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 4] wall=0.362s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0236, PSNR: 9.45 dB, MSE: 0.113558
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 5] wall=0.851s, CPU=0.797s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0581, PSNR: 9.88 dB, MSE: 0.102864
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 6] wall=0.818s, CPU=0.797s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0964, PSNR: 10.95 dB, MSE: 0.080415
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 7] wall=0.372s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0395, PSNR: 9.46 dB, MSE: 0.113233
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 8] wall=0.291s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0419, PSNR: 9.86 dB, MSE: 0.103368
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 9] wall=0.375s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0837, PSNR: 10.47 dB, MSE: 0.089785
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 10] wall=0.521s, CPU=0.531s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0683, PSNR: 10.22 dB, MSE: 0.094990
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 11] wall=0.423s, CPU=0.422s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0363, PSNR: 9.53 dB, MSE: 0.111543
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 12] wall=0.440s, CPU=0.438s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1086, PSNR: 10.90 dB, MSE: 0.081205
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 13] wall=0.278s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0747, PSNR: 10.53 dB, MSE: 0.088494
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 14] wall=0.435s, CPU=0.406s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0321, PSNR: 9.69 dB, MSE: 0.107468
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 15] wall=0.267s, CPU=0.234s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0490, PSNR: 9.93 dB, MSE: 0.101530
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 16] wall=0.355s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0503, PSNR: 10.24 dB, MSE: 0.094523
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 17] wall=0.237s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0790, PSNR: 11.09 dB, MSE: 0.077746
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 18] wall=0.268s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0750, PSNR: 10.33 dB, MSE: 0.092612
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 19] wall=0.261s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1053, PSNR: 11.16 dB, MSE: 0.076571
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 20] wall=0.340s, CPU=0.344s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0798, PSNR: 10.60 dB, MSE: 0.087133
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 21] wall=0.320s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0645, PSNR: 10.58 dB, MSE: 0.087462
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 22] wall=0.281s, CPU=0.266s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0784, PSNR: 10.82 dB, MSE: 0.082854
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 23] wall=0.246s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0661, PSNR: 10.49 dB, MSE: 0.089235
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 24] wall=0.305s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0821, PSNR: 10.65 dB, MSE: 0.086144
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 25] wall=0.221s, CPU=0.234s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0407, PSNR: 10.11 dB, MSE: 0.097498
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 26] wall=0.482s, CPU=0.484s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0573, PSNR: 10.03 dB, MSE: 0.099326
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 27] wall=0.392s, CPU=0.391s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0489, PSNR: 10.22 dB, MSE: 0.095089
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 28] wall=0.292s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0871, PSNR: 10.70 dB, MSE: 0.085076
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 29] wall=0.375s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1195, PSNR: 11.26 dB, MSE: 0.074809
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 30] wall=0.253s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0562, PSNR: 10.23 dB, MSE: 0.094941
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 31] wall=0.272s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0381, PSNR: 9.67 dB, MSE: 0.107878
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 32] wall=0.295s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0502, PSNR: 9.88 dB, MSE: 0.102725
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 33] wall=0.594s, CPU=0.562s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0859, PSNR: 10.31 dB, MSE: 0.093064
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 34] wall=0.235s, CPU=0.234s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0524, PSNR: 10.29 dB, MSE: 0.093504
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 35] wall=0.458s, CPU=0.469s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1432, PSNR: 12.09 dB, MSE: 0.061769
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 36] wall=0.371s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0766, PSNR: 10.55 dB, MSE: 0.088081
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 37] wall=0.246s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0914, PSNR: 11.14 dB, MSE: 0.076992
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 38] wall=0.307s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0436, PSNR: 10.19 dB, MSE: 0.095685
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 39] wall=0.557s, CPU=0.547s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0335, PSNR: 9.78 dB, MSE: 0.105166
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 40] wall=0.282s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0596, PSNR: 10.61 dB, MSE: 0.086889
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 41] wall=0.273s, CPU=0.266s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0586, PSNR: 10.45 dB, MSE: 0.090256
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 42] wall=0.368s, CPU=0.344s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0820, PSNR: 10.64 dB, MSE: 0.086202
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 43] wall=0.226s, CPU=0.219s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0500, PSNR: 9.93 dB, MSE: 0.101726
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 44] wall=0.314s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0854, PSNR: 11.39 dB, MSE: 0.072590
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 45] wall=0.532s, CPU=0.516s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0964, PSNR: 10.60 dB, MSE: 0.087075
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 46] wall=0.300s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0665, PSNR: 10.68 dB, MSE: 0.085456
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 47] wall=0.272s, CPU=0.219s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0496, PSNR: 10.01 dB, MSE: 0.099694
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 48] wall=0.191s, CPU=0.172s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0322, PSNR: 9.77 dB, MSE: 0.105432
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 49] wall=0.409s, CPU=0.406s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0686, PSNR: 10.50 dB, MSE: 0.089048
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 50] wall=0.283s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0909, PSNR: 10.73 dB, MSE: 0.084535
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 51] wall=0.196s, CPU=0.188s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0486, PSNR: 10.03 dB, MSE: 0.099285
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 52] wall=0.346s, CPU=0.344s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0567, PSNR: 10.13 dB, MSE: 0.097072
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 53] wall=0.441s, CPU=0.422s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0955, PSNR: 10.87 dB, MSE: 0.081920
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 54] wall=0.565s, CPU=0.531s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0687, PSNR: 10.71 dB, MSE: 0.084848
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 55] wall=0.536s, CPU=0.516s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1182, PSNR: 11.27 dB, MSE: 0.074654
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 56] wall=0.378s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0969, PSNR: 11.36 dB, MSE: 0.073096
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 57] wall=0.256s, CPU=0.266s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0715, PSNR: 10.28 dB, MSE: 0.093739
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 58] wall=0.473s, CPU=0.484s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1477, PSNR: 12.24 dB, MSE: 0.059647
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 59] wall=0.323s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0701, PSNR: 10.40 dB, MSE: 0.091241
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 60] wall=0.316s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0543, PSNR: 10.30 dB, MSE: 0.093330
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 61] wall=0.765s, CPU=0.750s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0338, PSNR: 9.54 dB, MSE: 0.111099
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 62] wall=0.452s, CPU=0.453s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0380, PSNR: 9.58 dB, MSE: 0.110036
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 63] wall=0.480s, CPU=0.484s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0494, PSNR: 10.32 dB, MSE: 0.092813
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 64] wall=0.679s, CPU=0.688s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0735, PSNR: 10.73 dB, MSE: 0.084559
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 65] wall=0.397s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0639, PSNR: 9.98 dB, MSE: 0.100393
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 66] wall=0.373s, CPU=0.344s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0842, PSNR: 11.01 dB, MSE: 0.079173
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 67] wall=0.629s, CPU=0.609s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1315, PSNR: 11.73 dB, MSE: 0.067192
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 68] wall=0.480s, CPU=0.469s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0589, PSNR: 10.52 dB, MSE: 0.088683
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 69] wall=0.228s, CPU=0.219s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0291, PSNR: 9.75 dB, MSE: 0.105880
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 70] wall=0.334s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0827, PSNR: 10.37 dB, MSE: 0.091809
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 71] wall=0.291s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0600, PSNR: 10.08 dB, MSE: 0.098265
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 72] wall=0.344s, CPU=0.344s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0504, PSNR: 10.20 dB, MSE: 0.095390
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 73] wall=0.741s, CPU=0.734s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0563, PSNR: 10.41 dB, MSE: 0.090991
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 74] wall=0.582s, CPU=0.562s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0693, PSNR: 10.35 dB, MSE: 0.092300
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 75] wall=0.952s, CPU=0.891s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0678, PSNR: 10.53 dB, MSE: 0.088451
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 76] wall=0.504s, CPU=0.500s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0821, PSNR: 10.79 dB, MSE: 0.083295
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 77] wall=0.974s, CPU=0.984s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0429, PSNR: 10.20 dB, MSE: 0.095433
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 78] wall=0.525s, CPU=0.453s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0725, PSNR: 10.84 dB, MSE: 0.082481
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 79] wall=0.416s, CPU=0.422s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0609, PSNR: 10.17 dB, MSE: 0.096202
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 80] wall=0.332s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0361, PSNR: 9.47 dB, MSE: 0.112946
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 81] wall=0.358s, CPU=0.344s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0646, PSNR: 10.46 dB, MSE: 0.089949
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 82] wall=0.404s, CPU=0.406s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0373, PSNR: 9.96 dB, MSE: 0.100963
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 83] wall=0.434s, CPU=0.422s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0893, PSNR: 10.65 dB, MSE: 0.086087
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 84] wall=0.286s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1117, PSNR: 11.34 dB, MSE: 0.073435
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 85] wall=0.214s, CPU=0.188s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0811, PSNR: 10.83 dB, MSE: 0.082673
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 86] wall=0.366s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0370, PSNR: 9.46 dB, MSE: 0.113223
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 87] wall=0.821s, CPU=0.734s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0661, PSNR: 10.03 dB, MSE: 0.099275
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 88] wall=0.704s, CPU=0.641s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0745, PSNR: 10.96 dB, MSE: 0.080133
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 89] wall=0.756s, CPU=0.750s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0899, PSNR: 10.56 dB, MSE: 0.087978
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 90] wall=0.381s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0585, PSNR: 10.01 dB, MSE: 0.099879
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 91] wall=0.320s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0403, PSNR: 10.34 dB, MSE: 0.092408
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 92] wall=0.499s, CPU=0.500s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0789, PSNR: 10.58 dB, MSE: 0.087554
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 93] wall=0.258s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0665, PSNR: 10.71 dB, MSE: 0.084992
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 94] wall=0.495s, CPU=0.500s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1008, PSNR: 10.69 dB, MSE: 0.085223
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 95] wall=0.321s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0406, PSNR: 9.97 dB, MSE: 0.100624
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 96] wall=0.274s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0755, PSNR: 10.52 dB, MSE: 0.088803
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 97] wall=0.543s, CPU=0.516s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0999, PSNR: 11.28 dB, MSE: 0.074455
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 98] wall=0.384s, CPU=0.391s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0906, PSNR: 11.16 dB, MSE: 0.076494
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 99] wall=0.377s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0725, PSNR: 10.36 dB, MSE: 0.092057
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 100] wall=0.712s, CPU=0.688s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1154, PSNR: 11.34 dB, MSE: 0.073411
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 101] wall=0.327s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0811, PSNR: 10.85 dB, MSE: 0.082266
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 102] wall=0.263s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0589, PSNR: 10.60 dB, MSE: 0.087069
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 103] wall=0.667s, CPU=0.625s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0845, PSNR: 10.61 dB, MSE: 0.086811
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 104] wall=0.357s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0702, PSNR: 9.97 dB, MSE: 0.100589
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 105] wall=0.370s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0655, PSNR: 10.58 dB, MSE: 0.087499
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 106] wall=0.610s, CPU=0.625s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0714, PSNR: 10.25 dB, MSE: 0.094389
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 107] wall=0.274s, CPU=0.266s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0719, PSNR: 10.67 dB, MSE: 0.085697
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 108] wall=0.493s, CPU=0.469s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0507, PSNR: 10.48 dB, MSE: 0.089603
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 109] wall=0.479s, CPU=0.469s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0940, PSNR: 11.26 dB, MSE: 0.074811
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 110] wall=0.496s, CPU=0.500s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0616, PSNR: 10.25 dB, MSE: 0.094478
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 111] wall=0.315s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1079, PSNR: 10.93 dB, MSE: 0.080762
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 112] wall=0.538s, CPU=0.547s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0580, PSNR: 10.04 dB, MSE: 0.099007
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 113] wall=0.490s, CPU=0.500s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0548, PSNR: 9.86 dB, MSE: 0.103163
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 114] wall=0.444s, CPU=0.438s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0452, PSNR: 9.97 dB, MSE: 0.100714
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 115] wall=0.504s, CPU=0.500s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0534, PSNR: 10.13 dB, MSE: 0.097119
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 116] wall=0.671s, CPU=0.672s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0576, PSNR: 9.97 dB, MSE: 0.100798
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 117] wall=0.295s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0606, PSNR: 10.66 dB, MSE: 0.085928
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 118] wall=0.727s, CPU=0.719s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0693, PSNR: 10.78 dB, MSE: 0.083532
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 119] wall=0.365s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1096, PSNR: 11.07 dB, MSE: 0.078230
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 120] wall=0.390s, CPU=0.391s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1090, PSNR: 11.10 dB, MSE: 0.077593
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 121] wall=0.291s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0430, PSNR: 9.91 dB, MSE: 0.102098
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 122] wall=0.426s, CPU=0.438s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0577, PSNR: 10.04 dB, MSE: 0.099133
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 123] wall=0.269s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0694, PSNR: 10.91 dB, MSE: 0.081036
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 124] wall=0.577s, CPU=0.406s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0518, PSNR: 10.36 dB, MSE: 0.092139
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 125] wall=0.464s, CPU=0.438s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0798, PSNR: 10.72 dB, MSE: 0.084697
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 126] wall=0.335s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0645, PSNR: 10.41 dB, MSE: 0.091011
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 127] wall=0.262s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0334, PSNR: 9.57 dB, MSE: 0.110403
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 128] wall=0.388s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0621, PSNR: 10.72 dB, MSE: 0.084758
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 129] wall=0.345s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0652, PSNR: 10.31 dB, MSE: 0.093188
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 130] wall=0.396s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0266, PSNR: 9.57 dB, MSE: 0.110394
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 131] wall=0.452s, CPU=0.406s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0713, PSNR: 10.36 dB, MSE: 0.091977
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 132] wall=0.327s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0539, PSNR: 10.30 dB, MSE: 0.093351
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 133] wall=0.259s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0931, PSNR: 10.88 dB, MSE: 0.081749
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 134] wall=0.390s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0555, PSNR: 10.39 dB, MSE: 0.091374
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 135] wall=0.341s, CPU=0.328s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0707, PSNR: 10.69 dB, MSE: 0.085216
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 136] wall=0.544s, CPU=0.547s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0990, PSNR: 10.34 dB, MSE: 0.092512
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 137] wall=0.323s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0447, PSNR: 9.75 dB, MSE: 0.106004
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 138] wall=0.354s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0664, PSNR: 10.39 dB, MSE: 0.091375
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 139] wall=0.454s, CPU=0.453s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0479, PSNR: 9.44 dB, MSE: 0.113735
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 140] wall=0.318s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0637, PSNR: 10.78 dB, MSE: 0.083560
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 141] wall=0.398s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0689, PSNR: 10.68 dB, MSE: 0.085558
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 142] wall=0.250s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0505, PSNR: 10.16 dB, MSE: 0.096348
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 143] wall=0.362s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0616, PSNR: 10.09 dB, MSE: 0.097876
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 144] wall=0.249s, CPU=0.234s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0569, PSNR: 10.04 dB, MSE: 0.099181
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 145] wall=0.418s, CPU=0.391s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0444, PSNR: 10.13 dB, MSE: 0.096948
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 146] wall=0.494s, CPU=0.484s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0813, PSNR: 10.75 dB, MSE: 0.084131
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 147] wall=0.345s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0233, PSNR: 9.45 dB, MSE: 0.113599
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 148] wall=0.259s, CPU=0.266s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0771, PSNR: 10.51 dB, MSE: 0.088897
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 149] wall=0.307s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0457, PSNR: 10.34 dB, MSE: 0.092570
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 150] wall=0.292s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0700, PSNR: 10.54 dB, MSE: 0.088272
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 151] wall=0.472s, CPU=0.469s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0412, PSNR: 10.18 dB, MSE: 0.095847
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 152] wall=0.318s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0955, PSNR: 11.15 dB, MSE: 0.076701
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 153] wall=0.364s, CPU=0.312s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0917, PSNR: 11.03 dB, MSE: 0.078835
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 154] wall=0.321s, CPU=0.281s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0578, PSNR: 10.66 dB, MSE: 0.085843
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 155] wall=0.383s, CPU=0.375s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0235, PSNR: 9.54 dB, MSE: 0.111236
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 156] wall=0.246s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0676, PSNR: 10.56 dB, MSE: 0.087912
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 157] wall=0.281s, CPU=0.234s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0466, PSNR: 9.91 dB, MSE: 0.101981
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 158] wall=0.412s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0901, PSNR: 10.97 dB, MSE: 0.080022
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 159] wall=0.337s, CPU=0.297s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0652, PSNR: 10.67 dB, MSE: 0.085772
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 160] wall=0.231s, CPU=0.234s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0630, PSNR: 10.59 dB, MSE: 0.087317
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 161] wall=0.255s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0573, PSNR: 10.68 dB, MSE: 0.085481
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 162] wall=0.252s, CPU=0.266s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0617, PSNR: 10.38 dB, MSE: 0.091572
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 163] wall=0.535s, CPU=0.516s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0740, PSNR: 10.64 dB, MSE: 0.086346
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 164] wall=0.395s, CPU=0.391s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0336, PSNR: 9.67 dB, MSE: 0.107803
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 165] wall=0.535s, CPU=0.531s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0941, PSNR: 10.82 dB, MSE: 0.082726
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 166] wall=0.455s, CPU=0.453s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0655, PSNR: 10.34 dB, MSE: 0.092402
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 167] wall=0.250s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0438, PSNR: 9.40 dB, MSE: 0.114894
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 168] wall=0.465s, CPU=0.453s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0610, PSNR: 10.39 dB, MSE: 0.091314
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 169] wall=0.254s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0555, PSNR: 10.09 dB, MSE: 0.098036
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 170] wall=0.528s, CPU=0.500s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0531, PSNR: 9.95 dB, MSE: 0.101188
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 171] wall=0.340s, CPU=0.344s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0649, PSNR: 10.23 dB, MSE: 0.094738
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 172] wall=0.475s, CPU=0.469s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0691, PSNR: 10.42 dB, MSE: 0.090811
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 173] wall=0.362s, CPU=0.359s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0616, PSNR: 9.94 dB, MSE: 0.101321
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 174] wall=0.260s, CPU=0.266s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0566, PSNR: 10.09 dB, MSE: 0.097887
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 175] wall=0.240s, CPU=0.250s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.0974, PSNR: 11.04 dB, MSE: 0.078681
+stop reason: iht_stop_information:residual_converged
+[iht CLEAN run 176] wall=0.417s, CPU=0.406s
+Static memory  (MB): 6.407806396484375
+Peak memory    (MB): 6.47186279296875
+Extra dynamic  (MB): 0.064056396484375
+SSIM: 0.1050, PSNR: 11.27 dB, MSE: 0.074589

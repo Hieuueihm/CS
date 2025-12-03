@@ -1,0 +1,5 @@
+AVERAGE SSIM: 0.0386, PSNR: 9.82 dB, MSE: 0.104253
+AVERAGE CPU: 74.266s
+AVERAGE Static Memory (MB): 12.82
+AVERAGE Peak Memory (MB): 17.92
+stop reason: cosamp_stop_information:max_iter_reached

@@ -1,5 +1,6 @@
 import numpy as np
 import time
+from core.metrics import psnr
 
 
 def cs_fista(
@@ -10,6 +11,9 @@ def cs_fista(
     max_iter=10000,
     return_info=True,
     ignore_iteration_log=False,
+    measure_memory=False,
+    x_true=None,
+    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -35,6 +39,8 @@ def cs_fista(
         Whether to return AlgorithmInformation.
     ignore_iteration_log : bool, optional
         If True, do not log per-iteration information.
+    measure_memory : bool, optional
+        If True, estimate static and peak memory usage based on array sizes.
 
     Returns
     -------
@@ -61,6 +67,16 @@ def cs_fista(
     L = np.linalg.norm(A, 2) ** 2
     muy = 1.0 / (L + 1e-12)
 
+    # --------- MEMORY: static + peak (ước lượng) ----------
+    if measure_memory:
+        # static: A, y, x_prev, x_curr
+        static_bytes = A.nbytes + y.nbytes + x_prev.nbytes + x_curr.nbytes
+        peak_bytes = static_bytes
+    else:
+        static_bytes = None
+        peak_bytes = None
+    # ------------------------------------------------------
+
     t0 = time.time()
     stop_reason = "max_iter_reached"
 
@@ -80,6 +96,22 @@ def cs_fista(
         res = y - A @ x_next
         resn = float(np.linalg.norm(res))
 
+        # ---------- MEMORY: dynamic + peak update ----------
+        if measure_memory:
+            # dynamic: z, r_z, g_z, u, x_next, res
+            dynamic_bytes = (
+                z.nbytes
+                + r_z.nbytes
+                + g_z.nbytes
+                + u.nbytes
+                + x_next.nbytes
+                + res.nbytes
+            )
+            current_bytes = static_bytes + dynamic_bytes
+            if current_bytes > peak_bytes:
+                peak_bytes = current_bytes
+        # ---------------------------------------------------
+
         if info is not None and info.iteration_log:
             sparsity = int(np.count_nonzero(x_next))
             info.add_iteration(
@@ -95,6 +127,11 @@ def cs_fista(
         if resn < tol:
             stop_reason = "residual"
             break
+        if x_true is not None:
+            current_psnr = psnr(x_true, x_next, data_range=1.0)
+            if current_psnr >= psnr_threshold:
+                stop_reason = "psnr_threshold_reached"
+                break
 
         x_prev = x_curr
         x_curr = x_next
@@ -108,6 +145,11 @@ def cs_fista(
             AlgorithmInformation.FISTA_STOP_INFORMATION + ":" + stop_reason
         )
         info.set_time(t1 - t0)
+
+        if measure_memory:
+            info.set_meta("memory_static_MB", static_bytes / (1024**2))
+            info.set_meta("memory_peak_MB", peak_bytes / (1024**2))
+
         return x_hat, info
 
-    return x_hat
+    return x_hat, None
