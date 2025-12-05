@@ -12,6 +12,7 @@ from PIL import Image
 import time
 import pandas as pd
 from memory_profiler import memory_usage
+import datetime
 
 
 def print_resource_usage(tag=""):
@@ -91,6 +92,8 @@ noise_list = ["CLEAN", "GAUSSIAN", "POISSON", "MIXED"]
 
 if __name__ == "__main__":
     pin_process()
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_path = os.path.join(RESULTS_FOLDER, f"{timestamp}")
 
     config = ExperimentConfig()
     with open(os.path.join(EXPERIMENT_FOLDER, "test_case.json"), "r") as f:
@@ -103,7 +106,7 @@ if __name__ == "__main__":
         pattern_type = config.pattern_type
         transform_type = config.transform_type
         image_path = config.image_path
-        save_path = os.path.join(RESULTS_FOLDER, f"{tc_name}")
+        save_path = os.path.join(run_path, f"{tc_name}")
         os.makedirs(save_path, exist_ok=True)
 
         print(
@@ -190,8 +193,6 @@ if __name__ == "__main__":
                                     return_info=True,
                                     ignore_iteration_log=False,
                                     measure_memory=True,
-                                    x_true=x,
-                                    psnr_threshold=20,
                                 )
 
                                 t_wall_end = time.perf_counter()
@@ -314,8 +315,6 @@ if __name__ == "__main__":
                                         return_info=True,
                                         ignore_iteration_log=False,
                                         measure_memory=True,
-                                        x_true=x,
-                                        psnr_threshold=20,
                                     )
 
                                     t_wall_end = time.perf_counter()
@@ -445,8 +444,6 @@ if __name__ == "__main__":
                                     return_info=True,
                                     ignore_iteration_log=False,
                                     measure_memory=True,
-                                    x_true=x,
-                                    psnr_threshold=20,
                                 )
 
                                 t_wall_end = time.perf_counter()

@@ -12,8 +12,6 @@ def cs_omp(
     return_info=True,
     ignore_iteration_log=False,
     measure_memory=False,
-    x_true=None,
-    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -92,14 +90,6 @@ def cs_omp(
         if k is not None and len(support) >= k:
             stop_reason = "sparsity_level_reached"
             break
-        if x_true is not None and x_S is not None:
-            hat_x_iter = np.zeros_like(hat_x)
-            hat_x_iter[support] = x_S.ravel()
-
-            current_psnr = psnr(x_true, hat_x_iter, data_range=1.0)
-            if current_psnr >= psnr_threshold:
-                stop_reason = "psnr_threshold_reached"
-                break
 
     t1 = time.time()
 

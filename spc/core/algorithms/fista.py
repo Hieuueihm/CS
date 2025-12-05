@@ -12,8 +12,6 @@ def cs_fista(
     return_info=True,
     ignore_iteration_log=False,
     measure_memory=False,
-    x_true=None,
-    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -22,30 +20,6 @@ def cs_fista(
 
     Solve approximately:
         min_x  0.5 * ||y - A x||_2^2 + lambda_ * ||x||_1
-
-    Parameters
-    ----------
-    y : ndarray, shape (m,)
-        Measurement vector.
-    A : ndarray, shape (m, n)
-        Measurement matrix.
-    lambda_ : float, optional
-        L1 regularization parameter.
-    tol : float, optional
-        Tolerance for stopping (relative change or residual norm).
-    max_iter : int, optional
-        Maximum number of iterations.
-    return_info : bool, optional
-        Whether to return AlgorithmInformation.
-    ignore_iteration_log : bool, optional
-        If True, do not log per-iteration information.
-    measure_memory : bool, optional
-        If True, estimate static and peak memory usage based on array sizes.
-
-    Returns
-    -------
-    x_hat : ndarray, shape (n,)
-        Recovered signal.
     """
 
     A = np.asarray(A, dtype=float)
@@ -61,16 +35,22 @@ def cs_fista(
         info.set_meta("tol", tol)
         info.set_meta("max_iter", max_iter)
 
+    # Khởi tạo
     x_prev = np.zeros(n)
     x_curr = np.zeros(n)
-    t_prev = 1.0
+    z_curr = x_curr.copy()  # điểm có momentum (y_k trong paper)
+    t_curr = 1.0
+
+    # L = ||A||_2^2, bước μ = 1/L
     L = np.linalg.norm(A, 2) ** 2
     muy = 1.0 / (L + 1e-12)
 
     # --------- MEMORY: static + peak (ước lượng) ----------
     if measure_memory:
-        # static: A, y, x_prev, x_curr
-        static_bytes = A.nbytes + y.nbytes + x_prev.nbytes + x_curr.nbytes
+        # static: A, y, x_prev, x_curr, z_curr
+        static_bytes = (
+            A.nbytes + y.nbytes + x_prev.nbytes + x_curr.nbytes + z_curr.nbytes
+        )
         peak_bytes = static_bytes
     else:
         static_bytes = None
@@ -81,15 +61,15 @@ def cs_fista(
     stop_reason = "max_iter_reached"
 
     for it in range(1, max_iter + 1):
-        t_curr = (1.0 + np.sqrt(1.0 + 4.0 * t_prev**2)) / 2.0
-        z = x_curr + ((t_prev - 1.0) / t_curr) * (x_curr - x_prev)
+        # 1) Gradient tại z_curr (y_k)
+        r_z = y - A @ z_curr  # residual
+        g_z = A.T @ r_z  # = -∇f(z_curr)
+        u = z_curr + muy * g_z  # z_curr - (1/L)∇f(z_curr)
 
-        r_z = y - A @ z
-        g_z = A.T @ r_z
-        u = z + muy * g_z
-
+        # 2) Soft-thresholding
         x_next = np.sign(u) * np.maximum(np.abs(u) - muy * lambda_, 0.0)
 
+        # 3) Kiểm tra hội tụ (trước khi cập nhật momentum)
         dx_rel = float(
             np.linalg.norm(x_next - x_curr) / (np.linalg.norm(x_next) + 1e-12)
         )
@@ -98,14 +78,9 @@ def cs_fista(
 
         # ---------- MEMORY: dynamic + peak update ----------
         if measure_memory:
-            # dynamic: z, r_z, g_z, u, x_next, res
+            # dynamic: r_z, g_z, u, x_next, res
             dynamic_bytes = (
-                z.nbytes
-                + r_z.nbytes
-                + g_z.nbytes
-                + u.nbytes
-                + x_next.nbytes
-                + res.nbytes
+                r_z.nbytes + g_z.nbytes + u.nbytes + x_next.nbytes + res.nbytes
             )
             current_bytes = static_bytes + dynamic_bytes
             if current_bytes > peak_bytes:
@@ -123,21 +98,20 @@ def cs_fista(
 
         if dx_rel < tol:
             stop_reason = "dx_rel"
+            x_curr = x_next
             break
-        if resn < tol:
-            stop_reason = "residual"
-            break
-        if x_true is not None:
-            current_psnr = psnr(x_true, x_next, data_range=1.0)
-            if current_psnr >= psnr_threshold:
-                stop_reason = "psnr_threshold_reached"
-                break
 
+        # 4) Cập nhật momentum SAU khi có x_next
+        t_next = (1.0 + np.sqrt(1.0 + 4.0 * t_curr**2)) / 2.0
+        z_next = x_next + ((t_curr - 1.0) / t_next) * (x_next - x_curr)
+
+        # 5) Chuẩn bị cho vòng lặp sau
         x_prev = x_curr
         x_curr = x_next
-        t_prev = t_curr
+        z_curr = z_next
+        t_curr = t_next
 
-    x_hat = x_next
+    x_hat = x_curr
     t1 = time.time()
 
     if return_info and info is not None:

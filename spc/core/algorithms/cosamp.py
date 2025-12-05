@@ -12,8 +12,6 @@ def cs_cosamp(
     return_info=True,
     ignore_iteration_log=False,
     measure_memory=False,
-    x_true=None,
-    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -129,14 +127,6 @@ def cs_cosamp(
                 hat_x = x_temp
                 break
 
-        if r_norm < tol:
-            stop_reason = "tol_reached"
-            break
-        if x_true is not None:
-            current_psnr = psnr(x_true, x_temp, data_range=1.0)
-            if current_psnr >= psnr_threshold:
-                stop_reason = "psnr_threshold_reached"
-                break
         prev_resn = r_norm
 
     t1 = time.time()

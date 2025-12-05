@@ -13,8 +13,6 @@ def cs_iht(
     return_info=True,
     ignore_iteration_log=False,
     measure_memory=False,
-    x_true=None,
-    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -124,14 +122,6 @@ def cs_iht(
             rel_change = abs(prev_resn - resn) / max(prev_resn, 1e-12)
             if rel_change <= tol:
                 stop_reason = "residual_converged"
-                break
-        if resn <= tol:
-            stop_reason = "residual_below_tol"
-            break
-        if x_true is not None:
-            current_psnr = psnr(x_true, hat_x, data_range=1.0)
-            if current_psnr >= psnr_threshold:
-                stop_reason = "psnr_threshold_reached"
                 break
 
         prev_resn = resn

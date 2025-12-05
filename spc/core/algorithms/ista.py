@@ -12,8 +12,6 @@ def cs_ista(
     return_info=True,
     ignore_iteration_log=False,
     measure_memory=False,
-    x_true=None,
-    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -122,14 +120,6 @@ def cs_ista(
         if dx_rel < tol:
             stop_reason = "dx_rel"
             break
-        if resn < tol:
-            stop_reason = "residual"
-            break
-        if x_true is not None:
-            current_psnr = psnr(x_true, x_hat, data_range=1.0)
-            if current_psnr >= psnr_threshold:
-                stop_reason = "psnr_threshold_reached"
-                break
 
         x_prev = x_hat
 

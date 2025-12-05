@@ -12,8 +12,6 @@ def cs_sp(
     return_info=True,
     ignore_iteration_log=False,
     measure_memory=False,
-    x_true=None,
-    psnr_threshold=None,
 ):
     from utils.algorithm_information import AlgorithmInformation
 
@@ -128,15 +126,7 @@ def cs_sp(
             if rel_change <= tol:
                 stop_reason = "residual_converged"
                 break
-        if r_norm < tol:
-            stop_reason = "tol_reached"
-            break
             # Update support
-        if x_true is not None:
-            current_psnr = psnr(x_true, hat_x, data_range=1.0)
-            if current_psnr >= psnr_threshold:
-                stop_reason = "psnr_threshold_reached"
-                break
         support_prev = new_support
         prev_resn = r_norm
 

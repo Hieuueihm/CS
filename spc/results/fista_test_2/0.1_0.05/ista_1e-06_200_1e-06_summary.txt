@@ -1,0 +1,5 @@
+AVERAGE SSIM: 0.0394, PSNR: 9.68 dB, MSE: 0.107753
+AVERAGE CPU: 0.312s
+AVERAGE Static Memory (MB): 12.82
+AVERAGE Peak Memory (MB): 12.92
+stop reason: fista_stop_information:dx_rel
