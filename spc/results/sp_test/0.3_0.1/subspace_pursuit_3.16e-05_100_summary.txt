@@ -1,0 +1,5 @@
+AVERAGE SSIM: 0.4400, PSNR: 20.33 dB, MSE: 0.009270
+AVERAGE WALL TIME: 29.160AVERAGE CPU: 28.938s
+AVERAGE Static Memory (MB): 38.42
+AVERAGE Peak Memory (MB): 46.17
+stop reason: sp_stop_information:max_iter_reached

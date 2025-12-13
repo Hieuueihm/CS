@@ -29,6 +29,23 @@ def read_image(filepath, size):
     return x
 
 
+def pin_process():
+    p = psutil.Process(os.getpid())
+
+    # 1) Ghim vào core 0 (có thể chọn core khác, ví dụ [1], [2], ...)
+    try:
+        p.cpu_affinity([0])
+    except AttributeError:
+        # cpu_affinity không có trên 1 số hệ điều hành, nhưng Windows thì có
+        pass
+
+    # 2) Tăng priority (Windows)
+    try:
+        p.nice(psutil.HIGH_PRIORITY_CLASS)
+    except AttributeError:
+        pass
+
+
 algo_list = [
     ReconstructionAlgorithms.COSAMP,
 ]
@@ -40,6 +57,7 @@ M_list = [0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.7]
 k_list = [0.01, 0.05, 0.1, 0.15]
 
 if __name__ == "__main__":
+    pin_process()
     cosamp_path = os.path.join(RESULTS_FOLDER, "cosamp_test")
     image_dir = os.path.join(DATA_FOLDER, image_path)
     image_shape = (64, 64)

@@ -1,0 +1,5 @@
+AVERAGE SSIM: 0.3365, PSNR: 16.81 dB, MSE: 0.020852
+AVERAGE WALL TIME: 0.056AVERAGE CPU: 0.047s
+AVERAGE Static Memory (MB): 89.67
+AVERAGE Peak Memory (MB): 91.50
+stop reason: sp_stop_information:residual_converged
